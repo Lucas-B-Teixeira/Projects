@@ -1,0 +1,89 @@
+{
+  "id": "D1",
+  "desafio": "Serviço de gerenciamento de histórias",
+  "metodos": [
+    {
+      "nome": "fs.readFileSync",
+      "descricao": "Lê o conteúdo de um arquivo de forma síncrona."
+    },
+    {
+      "nome": "fs.writeFileSync",
+      "descricao": "Escreve o conteúdo em um arquivo de forma síncrona."
+    },
+    {
+      "nome": "JSON.parse",
+      "descricao": "Converte um string JSON em um objeto JavaScript."
+    },
+    {
+      "nome": "JSON.stringify",
+      "descricao": "Converte um objeto JavaScript em uma string JSON."
+    },
+    {
+      "nome": "Array.filter",
+      "descricao": "Cria um novo array com todos os elementos que passam no teste implementado pela função fornecida."
+    },
+    {
+      "nome": "Array.push",
+      "descricao": "Adiciona um ou mais elementos ao final de um array e retorna o novo comprimento do array."
+    },
+    {
+      "nome": "Array.forEach",
+      "descricao": "Executa uma dada função em cada elemento de um array."
+    }
+  ],
+  "conhecimentos": [
+    {
+      "nome": "JavaScript",
+      "descricao": "Linguagem de programação utilizada para escrever o código do script"
+    },
+    {
+      "nome": "fs",
+      "descricao": "Biblioteca de manipulação de arquivos do Node.js utilizada para ler e escrever arquivos no sistema de arquivos"
+    },
+    {
+      "nome": "Métodos de manipulação de arrays",
+      "descricao": "Métodos como filter e push utilizados para manipular os dados no arquivo JSON"
+    },
+    {
+      "nome": "Formato de arquivos JSON",
+      "descricao": "Formato de arquivo utilizado para armazenar os dados das histórias"
+    },
+    {
+      "nome": "Boas práticas de programação",
+      "descricao": "Conjunto de recomendações para escrever código de maneira clara, organizada e fácil de entender"
+    },
+    {
+      "nome": "Funções",
+      "descricao": "Blocos de código que são utilizados para realizar tarefas específicas"
+    },
+    {
+      "nome": "Imports e exports",
+      "descricao": "Mecanismo utilizado para dividir o código em múltiplos arquivos e compartilhar funções entre eles"
+    },
+    {
+      "nome": "Manipulação de erros",
+      "descricao": "Recurso utilizado para tratar possíveis erros que possam ocorrer durante a execução das funções"
+    },
+    {
+      "nome": "Sintaxe de objetos e arrays",
+      "descricao": "Tipos de dados utilizados para armazenar os dados das histórias"
+    },
+    {
+      "nome": "Manipulação de strings",
+      "descricao": "Técnica utilizada para manipular os títulos e conteúdos das histórias"
+    },
+    {
+      "nome": "Manipulação de arquivos",
+      "descricao": "Técnica utilizada para ler e escrever arquivos no sistema de arquivos de maneira segura"
+    },
+    {
+      "nome": "GitHub",
+      "descricao": "Usar o Git para gerenciar o código-fonte do script e o GitHub para compartilhá-lo e colaborar com outros desenvolvedores."
+    },    
+    {
+      "nome":  "Design de código",
+      "descricao" : "Desenhar o código de maneira a garantir que ele seja flexível, fácil de mudar e escalável. Isso inclui coisas como usar padrões de projeto, evitar acoplamento excessivo entre os módulos do código"
+    }
+    
+]
+}

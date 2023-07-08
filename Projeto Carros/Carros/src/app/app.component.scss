@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url('../assets/Poppins-Light.ttf');
+}
+
+@font-face {
+    font-family: Poppins_bold;
+    src: url('../assets/Poppins-SemiBold.ttf');
+}
+
+.main__newcar{
+    z-index: 10;
+}
+
+
+.main__newcar__box{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: Poppins;
+
+    &__img{
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+
+        &__foto{
+            width: 100%;
+            position: absolute;
+            margin-left: 15vw;
+            z-index: 0;
+        }
+    }   
+   
+    &__conteiner{
+        background-color: transparent;
+        color: white;
+        width: 30vw;
+        height: 100vh;
+        position: absolute;
+        margin-left: 7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        font-size: 1.5vw;
+        font-family: Poppins;
+        
+
+        &__inputs{
+            background-color: transparent;
+            color: white;
+            width: 100%;
+            font-size: 1.8vw;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 150px 350px;
+            grid-template-rows: 50px 50px 50px 50px 50px;
+            row-gap: 20px;
+            font-family: Poppins;
+
+            &__marca, &__modelo, &__ano, &__cor{
+                font-size: 1.3vw;
+                font-family: Poppins;
+            }
+
+            &__btn{
+                background-color: rgb(255, 136, 0);
+                color:white;
+                font-size: 1.5vw;
+                border: white solid 2px;
+                border-radius: 5px;
+                width: 500px;
+                height: 50px;
+                margin-top: 20px;
+                font-family: Poppins;
+                z-index: 15;
+                cursor: pointer;
+            }
+        
+        }
+    }
+
+    &__rotate{
+        background-color: #04045e;
+        transform: rotate(45deg);
+        width: 62vw;
+        height: 62vw;
+        margin-top: -7vw;
+        margin-left: -15vw;
+        z-index: 5;
+    }
+
+    &__vermais{
+        width: 100vw;
+        position: absolute;
+        z-index: 9;
+        display: flex;
+        justify-content: center;
+        margin-top: -10vh;
+
+        a{
+            color: aliceblue;
+            font-size: 1.3vw;
+            font-family: Poppins_bold;
+            text-decoration: none;
+            animation: pulsar 1.5s infinite;
+        }
+
+    }
+}
+
+@keyframes pulsar {
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+
+
+.box__cards{
+    width: 100vw;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+
+    ul{
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        flex-wrap: wrap;
+    }
+
+    &__cars{
+        background-color: white;
+        width: 15vw;
+        height: 40vh;
+        margin-right: 1%;
+        margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__img{
+            width: 90%;
+            height: 60%;
+            background-color: #04045e;
+            overflow: hidden;
+
+            &__foto{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__marca,&__modelo, &__ano, &__cor{
+            height: 7%;
+            width: 90%;
+            margin-top: 2%;
+            display: flex;
+            align-items: center;
+            font-family: poppins;
+            justify-content: space-between;
+            color: #04045e;
+            border-bottom: solid 2px #04045e;
+        }
+    }
+}

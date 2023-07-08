@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+    <link rel="stylesheet" href="/stylesheet.css">
+    <script src="/script.js"></script>
+</head>
+<body>
+
+    <div class="card">
+        <header>
+            <div class="card__header__text">    
+                <h1 class="card__header__text__title">COMEÇE O SEU DIA COM UMA FRASE DE</h1>
+                <div class="card__header__text__dropdown">
+                    <div class="alinhar">
+                        <input class="card__header__text__dropdown__input" type="text" placeholder="Selecione o tema" onkeyup="textUser()">
+                        <button class="card__header__text__dropdown__btn" onclick="dropdown()">&#9660;</button>
+                    </div>
+                
+                    <div class="card__header__text__dropdown__list"> 
+                        <button class="list__amor" onclick="inputValue('amor')">Amor</button>
+                        <button class="list__motivacao" onclick="inputValue('motivacao')">Motivação</button>
+                        <button class="list__inspiracao" onclick="inputValue('inspiracao')">Inspiração</button>
+                        <button class="list__empatia" onclick="inputValue('empatia')">Empatia</button>
+                        <button class="list__filosofia" onclick="inputValue('filosofia')">Filosofia</button>   
+                    </div>
+                    <div class="card__header__text__dropdown__sugestao">
+                        <button class="list__sugestao__amor" onclick="inputValueSug('amor')">Amor</button>
+                        <button class="list__sugestao__motivacao" onclick="inputValueSug('motivacao')">Motivação</button>
+                        <button class="list__sugestao__inspiracao" onclick="inputValueSug('inspiracao')">Inspiração</button>
+                        <button class="list__sugestao__empatia" onclick="inputValueSug('empatia')">Empatia</button>
+                        <button class="list__sugestao__filosofia" onclick="inputValueSug('filosofia')">Filosofia</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="main__quanti">
+               <p class="main__quanti__text"></p> 
+            </div>
+            
+            <div class="main__frase">  
+               <p class="main__frase__text"></p> 
+            </div>
+
+            <div class="main__autor">
+                <p class="main__autor__text"></p>
+            </div>
+            
+            <div class="main__btn">
+               <button class="main__btn__text" onclick="gerarFrase()">GERAR FRASE</button> 
+            </div>
+            
+        </main>
+
+        <footer>
+            <h1 class="footer__text">TENHA UM BOM DIA !</h1>
+        </footer>
+    </div>
+</body>
+</html>

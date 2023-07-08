@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não compre, ADOTE...</title>
+    <link rel="shortcut icon" href="../assets/images/Logo_site.png">
+    <link rel="stylesheet" href="/home_page/home.css">
+    <script src="/home_page/script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="header__box">
+            <img src="../assets/images/Logo_site.png"  class="header__box__logo">
+            <div class="header__box__text">
+                <h1 class="header__box__text__name">ADOTE</h1>
+                <h4 class="header__box__text__descri">Não Compre, Adote...</h4>
+            </div>
+        </div>
+
+        <div class="header__nav">
+            <ul class="header__nav__list">
+                <a class="header__nav__list__inicio">Início</a>
+                <a class="header__nav__list_adotar">Adotar</a>
+                <a class="header__nav__list__contri">Contribuir com ONG</a>
+                <a class="header__nav__list__sobre">Sobre</a>
+            </ul>
+        </div>
+        <div class="header__user">
+            <ul class="header__user__list">
+                <a class="header__user__list__entre">Entre</a>
+                <a href="/cadastre_page/cadastre.html" class="header__user__list__cadast">Cadastre-se</a>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="main__home">
+            <div class="main__home__box">
+                <div class="main__home__box__conteiner">
+                    <h1 class="main__home__box__conteiner__title">ENCONTRE SEU MELHOR AMIGO AQUI</h1>
+                    <form class="main__home__box__conteiner__form" action="">
+                        <select class="main__home__box__conteiner__form__animal" onclick="tipoAnimal()">
+                            <option value="" enable selected hidden>Selecione o tipo do animal</option>
+                            <option value="cachorro">Cachorro</option>
+                            <option value="gato">Gato</option>
+                            <option value="passaro">Pássaro</option>
+                            <option value="coelho">Coelho</option>
+                            <option value="porco">Porco</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                        <select class="main__home__box__conteiner__form__porte" onclick="porteAnimal()">
+                            <option value="" enable selected hidden>Selecione o porte do animal</option>
+                            <option value="pequeno">Pequeno</option>
+                            <option value="medio">Médio</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                        <div class="menor">
+                            <div class="menor1">
+                                <select class="main__home__box__conteiner__form__genero" type="text">
+                                    <option value="" disabled selected hidden>Selecione o gênero</option>
+                                    <option value="macho">Macho</option>
+                                    <option value="femea">Fêmea</option>
+                                </select>
+                                <select class="main__home__box__conteiner__form__cor" type="text">
+                                    <option value="" disabled selected hidden>Selecione a cor</option>
+                                </select>
+                            </div>
+                            <div class="menor2">
+                                <select class="main__home__box__conteiner__form__idade" type="text">
+                                    <option value="" disabled selected hidden>Selecione a idade</option>
+                                    <option value="filhote">Filhote</option>
+                                    <option value="adulto">Adulto</option>
+                                    <option value="idoso">Idoso</option>
+                                </select>
+                                <select class="main__home__box__conteiner__form__localizacao" type="text">
+                                    <option value="" disabled selected hidden>Selecione o estado</option>
+                                    <option value="AC">AC</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AP">AP</option>
+                                    <option value="AM">AM</option>
+                                    <option value="BA">BA</option>
+                                    <option value="CE">CE</option>
+                                    <option value="DF">DF</option>
+                                    <option value="ES">ES</option>
+                                    <option value="GO">GO</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MT">MT</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MG">MG</option>
+                                    <option value="PB">PB</option>
+                                    <option value="PR">PR</option>
+                                    <option value="PE">PE</option>
+                                    <option value="PI">PI</option>
+                                    <option value="RJ">RJ</option>
+                                    <option value="RN">RN</option>
+                                    <option value="RS">RS</option>
+                                    <option value="RO">RO</option>
+                                    <option value="RR">RR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SP">SP</option>
+                                    <option value="SE">SE</option>
+                                    <option value="TP">TO</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="main__home__box__conteiner__form__btn">Buscar</button> 
+                </div>
+                <div class="main__home__ver-mais">
+                    <h1 class="main__home__ver-mais__text">Ver Mais</h1> 
+                    <h1 class="main__home__ver-mais__simble">&#711;</h1> 
+                 </div>
+                <img class="main__home__img" src="../assets/images/walpapper.png" alt="">
+            </div> 
+        </section>
+
+        <section class="main__portePequeno" id="main__portePequeno">
+            
+            <h1 class="main__portePequeno__title">Porte Pequeno</h1>
+            <div class="main__portePequeno__sliders">
+                <button class="main__portePequeno__sliders__btn-left" onclick="slideAntePP()">&lang;</button>
+                <div class="main__portePequeno__sliders__box">
+                    <div class="main__portePequeno__sliders__box__visu">
+                    </div>  
+                </div>  
+                <button class="main__portePequeno__sliders__btn-right" onclick="slideProxPP()">&rang;</button> 
+            </div>
+            
+        </section>
+
+        <section class="main__porteMedio" id="main__porteMedio">
+            
+            <h1 class="main__porteMedio__title">Porte Médio</h1>
+            <div class="main__porteMedio__sliders">
+                <button class="main__porteMedio__sliders__btn-left" onclick="slideAntePM()">&lang;</button>
+                <div class="main__porteMedio__sliders__box">
+                    <div class="main__porteMedio__sliders__box__visu">
+                    </div>  
+                </div>  
+                <button class="main__porteMedio__sliders__btn-right" onclick="slideProxPM()">&rang;</button> 
+            </div>
+            
+        </section>
+
+        <section class="main__porteGrande" id="main__porteGrande">
+            
+            <h1 class="main__porteGrande__title">Porte Grande</h1>
+            <div class="main__porteGrande__sliders">
+                <button class="main__porteGrande__sliders__btn-left" onclick="slideAntePG()">&lang;</button>
+                <div class="main__porteGrande__sliders__box">
+                    <div class="main__porteGrande__sliders__box__visu">
+                    </div>  
+                </div>  
+                <button class="main__porteGrande__sliders__btn-right" onclick="slideProxPG()">&rang;</button> 
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="footer__logo">
+                <img class="footer__logo__img" src="https://i.pinimg.com/originals/ff/ad/18/ffad182f2c5eda9b7e91efa1bdc03b38.png" alt="">
+            </div>
+            <div class="footer__inicio">
+                <h1 class="footer__inicio__text">Início</h1>
+                <ul class="footer__inicio__list">
+                    <a class="footer__inicio__home" href="">Home</a>
+                    <a class="footer__inicio__adotar" href="">Adotar</a>
+                    <a class="footer__inicio__contribuir" href="">Contribuir com ONG</a>
+                </ul>
+            </div>
+            <div class="footer__sobre-nos">
+                <h1 class="footer__sobre-nos__text">Sobre</h1>
+                <ul class="footer__sobre-nos__list">
+                    <a class="footer__sobre-nos__historia" href="">História</a>
+                    <a class="footer__sobre-nos__motivacao" href="">Motivação</a>
+                    <a class="footer__sobre-nos__contato" href="">Contato</a>
+                </ul>
+            </div>
+            <div class="footer__suporte">
+                <h1 class="footer__suporte__text">Suporte</h1>
+                <ul class="footer__suporte__list">
+                    <a class="footer__suporte__FAQ" href="">FAQ</a>
+                    <a class="footer__suporte__telefone" href="">Telefone</a>
+                    <a class="footer__suporte__email" href="">Email</a>
+                </ul>
+            </div>
+            <div class="footer__contato">
+                <div class="footer__contato__redes">
+                    <img class="footer__contato__redes__twitter" src="https://cdn-icons-png.flaticon.com/512/4494/4494465.png" alt="">
+                    <img class="footer__contato__redes__facebook" src="https://cdn-icons-png.flaticon.com/512/2175/2175193.png" alt="">
+                    <img class="footer__contato__redes__instagram" src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="">
+                </div>
+                <button class="footer__contato__btn">Contato</button>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

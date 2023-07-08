@@ -1,0 +1,430 @@
+body{
+    margin: 0;
+    background-color: rgb(223, 223, 226);
+}
+
+/*_____________________header________________________*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100vw;
+    height: 25vh;
+    background-color: transparent;/*rgb(65, 105, 225);*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 5;
+}
+
+/*----header box----*/
+
+.header__box{
+    display: flex;
+    align-items: center;
+    width: 23%;
+    justify-content: center;
+}
+
+.header__box__logo{
+    width: 40%;
+    margin-left: 4vh;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fontes/Poppins-Light.ttf);
+}
+
+.header__box__text{
+    margin-left: 5%;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__box__text__name{
+    margin: 3%;
+    text-decoration: underline;
+    transition: all ease 0.3s;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    color: rgb(221, 223, 224);
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.header__box__text__descri{
+    margin: 0;
+    text-decoration: underline;
+    transition: all ease 0.3s;
+    color: rgb(221, 223, 224);
+    font-size: 1vw;
+}
+
+.header__box__text__name:hover{
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.header__box__text__descri:hover{
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*----header navegação----*/
+
+.header__nav{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Poppins;
+}
+
+.header__nav__list__inicio,.header__nav__list_adotar,.header__nav__list__contri,.header__nav__list__sobre{
+    transition: all ease 0.3s; 
+    font-size: 1vw;
+    color: rgb(221, 223, 224);
+ }
+ 
+ .header__nav__list__inicio:hover,.header__nav__list_adotar:hover,.header__nav__list__contri:hover,.header__nav__list__sobre:hover{
+     transform: scale(1.2);
+     color: rgb(255, 255, 255);
+     cursor: pointer;
+  }
+ 
+
+/*----header usurario----*/
+
+.header__user{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__user__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Poppins;
+    height: 30%; 
+}
+
+.header__user__list__cadast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    width: 35%;
+    height: 100%;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+    font-size: 1vw;
+    color: rgb(221, 223, 224);
+}
+
+.header__user__list__entre{
+    transition: all ease 0.3s;
+    font-size: 1vw;
+    color: rgb(221, 223, 224);
+}
+
+.header__user__list__cadast:hover, .header__user__list__entre:hover{
+    transform: scale(1.2);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*_________________________________________________*/
+
+/*_____________________Main________________________*/
+
+main{
+    margin: 0;
+    transition: all ease 0.5s;
+}
+
+.main__home__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__home__img{
+    width: 100%;
+    height: 100vh;
+}
+
+.main__home__box__conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+}
+
+.main__home__box__conteiner__title{
+    font-family: Poppins;
+    font-size: 3vw;
+    color: white;
+}
+
+.main__home__box__conteiner__form{
+    display: grid;
+    grid-template-columns: 26vw 26vw;
+    grid-template-rows: 7vh 7vh;
+    grid-gap: 1vw;
+}
+
+.menor{
+    display: grid;
+    grid-template-columns: 26vw 26vw;
+    grid-template-rows: 7vh 7vh;
+    grid-gap: 1vw;
+}
+
+.menor1,.menor2{
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 12.5vw 12.5vw;
+}
+
+.main__home__box__conteiner__form__btn{
+    height: 7vh;
+    width: 53vw;
+    margin-top: 2vh;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-family: Poppins;
+    background-color: rgb(235, 33, 33);
+    color: white;
+}
+
+.main__home__box__conteiner__form__animal, .main__home__box__conteiner__form__genero, .main__home__box__conteiner__form__porte,
+.main__home__box__conteiner__form__cor,.main__home__box__conteiner__form__idade,.main__home__box__conteiner__form__localizacao{
+    border-radius: 5px;
+    font-size: 1vw;
+    font-family: Poppins;
+}
+
+.main__home__ver-mais{
+    position: absolute;
+    color: white;
+    margin-bottom: -40vw;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: pulsar 1.5s infinite;
+}
+
+@keyframes pulsar {
+    0%{
+        transform: scale(1.0);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1.0);
+    }
+}
+
+.main__home__ver-mais__text{
+    margin: 0;
+    font-size: 1.1vw;
+}
+
+.main__home__ver-mais__simble{
+    margin: 0;
+    font-size: 3vw;
+}
+
+.main__portePequeno, .main__porteMedio, .main__porteGrande{
+    height: 75vh;
+    transition: 0.3s all ease;
+    margin-top: 8vh;
+}
+
+.main__portePequeno__title, .main__porteMedio__title, .main__porteGrande__title{
+    font-family: Poppins;
+    display: flex;
+    margin-left: 20vh;
+    font-size: 1.5vw;
+}
+
+.main__portePequeno__sliders, .main__porteMedio__sliders, .main__porteGrande__sliders{
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    justify-content: space-evenly;
+    transition: 0.3s all ease;
+}
+
+.main__portePequeno__sliders__box, .main__porteMedio__sliders__box, .main__porteGrande__sliders__box{
+    width: 80%;
+    height: 50vh;
+   /* background-color: aqua;*/
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+    scroll-behavior: smooth;
+}
+
+
+.main__portePequeno__sliders__box__visu, .main__porteMedio__sliders__box__visu, .main__porteGrande__sliders__box__visu{
+    /*background-color: rgb(0, 255, 145);*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all ease 0.7s;
+    margin-left: 0vw;
+    left: 0px;
+}
+
+
+.main__portePequeno__sliders__btn-left, .main__portePequeno__sliders__btn-right,.main__porteMedio__sliders__btn-left,
+ .main__porteMedio__sliders__btn-right, .main__porteGrande__sliders__btn-left, .main__porteGrande__sliders__btn-right{
+    background: none;
+    border: none;
+    font-size: 5vw;
+    color: rgb(65, 105, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.main__portePequeno__sliders__btn-left:hover, .main__portePequeno__sliders__btn-right:hover,
+ .main__porteMedio__sliders__btn-left:hover, .main__porteMedio__sliders__btn-right:hover,
+ .main__porteGrande__sliders__btn-left:hover, .main__porteGrande__sliders__btn-right:hover{
+    transform: scale(1.3);
+}
+
+a{
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 5vw;
+    color: rgb(65, 105, 225);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*_________________________________________________*/
+
+/*_____________________Footer________________________*/
+
+.footer{
+    height: 25vh;
+    background-color: rgb(65, 105, 225);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.footer__logo__img{
+    width: 30%;
+}
+
+.footer__inicio, .footer__sobre-nos,.footer__suporte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+}
+
+.footer__inicio__text,.footer__sobre-nos__text,.footer__suporte__text{
+    font-family: Poppins;
+    font-size: 1.2vw;
+    color: white;
+    margin: 0;
+}
+
+.footer__inicio__list, .footer__sobre-nos__list, .footer__suporte__list{
+    padding: 0;
+}
+
+.footer__inicio__home, .footer__inicio__adotar, .footer__inicio__contribuir,
+.footer__sobre-nos__historia, .footer__sobre-nos__motivacao, .footer__sobre-nos__contato,
+.footer__suporte__FAQ, .footer__suporte__telefone, .footer__suporte__email{
+    font-family: Poppins;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    color: white;
+}
+
+.footer__inicio__home:hover, .footer__inicio__adotar:hover, .footer__inicio__contribuir:hover,
+.footer__sobre-nos__historia:hover, .footer__sobre-nos__motivacao:hover, .footer__sobre-nos__contato:hover,
+.footer__suporte__FAQ:hover, .footer__suporte__telefone:hover, .footer__suporte__email:hover{
+    color: blue;
+}
+
+.footer__contato{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__contato__redes{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.footer__contato__redes__twitter,.footer__contato__redes__instagram, .footer__contato__redes__facebook{
+    width: 30%;
+}
+
+.footer__contato__btn{
+    width: 70%;
+    height: 5vh;
+    margin-top: 3vh;
+    background-color: blue;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-size: 1vw;
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.3s;
+}
+
+.footer__contato__btn:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

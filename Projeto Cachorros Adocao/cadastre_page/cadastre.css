@@ -1,0 +1,336 @@
+body{
+    margin: 0;
+    background-color: rgb(223, 223, 226);
+}
+
+header{
+    width: 100vw;
+    height: 25vh;
+    background-color: transparent;/*rgb(65, 105, 225);*/
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 5;
+}
+
+/*----header box----*/
+
+.header__box{
+    display: flex;
+    align-items: center;
+    width: 23%;
+    justify-content: center;
+}
+
+.header__box__logo{
+    width: 40%;
+    margin-left: 4vh;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fontes/Poppins-Light.ttf);
+}
+
+.header__box__text{
+    margin-left: 5%;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__box__text__name{
+    margin: 3%;
+    text-decoration: underline;
+    transition: all ease 0.3s;
+    display: flex;
+    width: 55%;
+    justify-content: center;
+    color: rgb(221, 223, 224);
+    font-size: 2vw;
+    margin-bottom: 0;
+}
+
+.header__box__text__descri{
+    margin: 0;
+    text-decoration: underline;
+    transition: all ease 0.3s;
+    color: rgb(221, 223, 224);
+    font-size: 1vw;
+}
+
+.header__box__text__name:hover{
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.header__box__text__descri:hover{
+    transform: scale(1.1);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/*----header navegação----*/
+
+.header__nav{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header__nav__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: Poppins;
+}
+
+.header__nav__list__inicio,.header__nav__list_adotar,.header__nav__list__contri{
+    transition: all ease 0.3s; 
+    font-size: 1vw;
+    color: rgb(221, 223, 224);
+ }
+
+ .header__nav__list__sobre{
+    z-index: -1;
+    opacity: 0;
+ }
+ 
+ .header__nav__list__inicio:hover,.header__nav__list_adotar:hover,.header__nav__list__contri:hover,.header__nav__list__sobre:hover{
+     transform: scale(1.2);
+     color: rgb(255, 255, 255);
+     cursor: pointer;
+  }
+
+  .main__home__img{
+    width: 100%;
+    height: 100vh;
+}
+
+/*----------------------------------------USR--------------------------------------*/
+.box__form__usr{
+    height: 100vh;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 104, 228);
+    margin-left: 65vw;
+    font-family: Poppins;
+    position: absolute;
+    color: white;
+}
+.box__form__usr__btn{
+    height: 6vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box__form__usr__btn__usr{
+    background-color: rgb(235, 33, 33);
+    width: 40%;
+    height: 100%;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+    font-family: Poppins;
+    color: white;
+    border: white 2px solid;
+    font-size: 0.9vw;
+    margin-right: 1vh;
+}
+
+.box__form__usr__btn__ong{
+    background-color: rgb(236, 99, 99);
+    width: 40%;
+    height: 100%;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+    font-family: Poppins;
+    color: white;
+    border: none;
+    font-size: 0.9vw;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.usr{
+    height: 45vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+    transition: all ease 0.5s;
+}
+
+.usr__Pnome, .usr__Snome, .usr__tel{
+    height: 5vh;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+
+.usr__tel{
+    width: 70%;
+}
+
+.usr__estado{
+    height: 5.75vh;
+    width: 27%;
+    font-size: 0.9vw;
+    font-family: Poppins;
+}
+
+.usr__email{
+    height: 5vh;
+    margin-bottom: 1vh;
+    font-size: 0.9vw;
+    font-family: Poppins;
+}
+
+.usr__senha, .usr__conf-senha{
+    width: 47.7%;
+    height: 5vh;
+    font-size: 0.9vw;
+    font-family: Poppins;
+}
+
+.usr__cadast, .ong__cadast{
+    background-color: rgb(235, 33, 33);
+    width: 100%;
+    height: 6vh;
+    border-radius: 5px;
+    transition: all ease 0.3s;
+    font-family: Poppins;
+    color: white;
+    border: none;
+    margin-top: 1vh;
+    font-size: 0.9vw;
+    cursor: pointer;
+}
+
+/*----------------------------------------ONG--------------------------------------*/
+.box__form__ong{
+    height: 100vh;
+    width: 30vw;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 104, 228);
+    margin-left: 65vw;
+    font-family: Poppins;
+    position: absolute;
+    color: white;
+}
+
+.box__form__ong__btn{
+    height: 6vh;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box__form__ong__btn__ong{
+    background-color: rgb(235, 33, 33);
+    width: 40%;
+    height: 100%;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+    font-family: Poppins;
+    color: white;
+    border: white 2px solid;
+    font-size: 0.9vw;
+}
+
+.box__form__ong__btn__usr{
+    background-color: rgb(236, 99, 99);
+    width: 40%;
+    height: 100%;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+    font-family: Poppins;
+    color: white;
+    border: none;
+    font-size: 0.9vw;
+    cursor: pointer;
+    margin-right: 1vh;
+    cursor: pointer;
+}
+
+.ong{
+    height: 72vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all ease 0.5s;
+}
+
+.ong__nome, .ong__ponto-ref, .ong__tel, .ong__cnpj, .ong__email{
+    height: 5vh;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+
+.ong__cep{
+    height: 5vh;
+    width: 27.5%;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+
+.ong__logradouro{
+    height: 5vh;
+    width: 68%;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+
+.ong__estado{
+    height: 5.75vh;
+    width: 20%;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+.ong__cidade{
+    height: 5vh;
+    width: 77.2%;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+
+.ong__bairro{
+    height: 5vh;
+    width: 70.9%;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+
+.ong__numero{
+    height: 5vh;
+    width: 24.6%;
+    font-size: 0.9vw;
+    font-family: Poppins;
+    margin-bottom: 1vh;
+}
+
+.ong__senha, .ong__conf-senha{
+    width: 47.7%;
+    height: 5vh;
+    font-size: 0.9vw;
+    font-family: Poppins;
+}
+

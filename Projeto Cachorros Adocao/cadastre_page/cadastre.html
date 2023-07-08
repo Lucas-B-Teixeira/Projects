@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/cadastre_page/cadastre.css">
+    <link rel="shortcut icon" href="../assets/images/Logo_site.png">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script defer src="../public/bundle.js"></script>
+    <title>Adote - CADASTRE-SE</title>
+</head>
+<body>
+    <header id="header">
+        <div class="header__box">
+            <img src="../assets/images/Logo_site.png"  class="header__box__logo">
+            <div class="header__box__text">
+                <h1 class="header__box__text__name"><a class="header__box__text__name" href="../home_page/home.html">ADOTE</a></h1>
+                <h4 class="header__box__text__descri"><a class="header__box__text__descri" href="../home_page/home.html">Não Compre, Adote...</a></h4>
+            </div>
+        </div>
+
+        <div class="header__nav">
+            <ul class="header__nav__list">
+                <a class="header__nav__list__inicio">Início</a>
+                <a class="header__nav__list_adotar">Adotar</a>
+                <a class="header__nav__list__contri">Contribuir com ONG</a>
+                <a class="header__nav__list__sobre">Sobre</a>
+            </ul>
+        </div>
+    </header>
+   
+    <main>
+        <div class="box__form__usr">
+           <h1 class="box__form__usr__title">Cadastre-se</h1>
+           <div class="box__form__usr__btn">
+                <button class="box__form__usr__btn__usr">Usuário Comum</button>
+                <button class="box__form__usr__btn__ong">Para ONG</button>
+           </div>
+
+           <form action="" class="usr">
+                <input type="text" placeholder="Primeiro nome" class="usr__Pnome">
+                <input type="text" placeholder="Segundo nome" class="usr__Snome">
+                <div class="usr__box__tel__estado">
+                    <input type="text" placeholder="Telefone" class="usr__tel" onkeypress="$(this).mask('(00) 00000-0009')">
+                    <select name="" class="usr__estado">
+                        <option value="" disabled selected hidden>Estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TP">TO</option>
+                    </select>
+                </div>
+               
+                <input type="text" placeholder="E-mail" class="usr__email">
+                <div class="usr__password">
+                    <input type="password" placeholder="Crie uma senha" class="usr__senha">
+                    <input type="password" placeholder="Confirme sua senha" class="usr__conf-senha">
+                </div>
+                <button type="submit" class="usr__cadast">Cadastrar</button>
+            </form> 
+        </div>
+
+        <div class="box__form__ong">
+            <h1 class="box__form__ong__title">Cadastre-se</h1>
+            <div class="box__form__ong__btn">
+                 <button class="box__form__ong__btn__usr">Usuário Comum</button>
+                 <button class="box__form__ong__btn__ong">Para ONG</button>
+            </div>
+ 
+            <form action="" class="ong">
+                <input type="text" placeholder="Nome da ONG" class="ong__nome">
+                <div>
+                    <input type="text" placeholder="CEP" class="ong__cep" onkeypress="$(this).mask('00000-000')">
+                    <input type="text" placeholder="Logradouro" class="ong__logradouro"> 
+                </div>
+                <div>
+                    <input type="text" placeholder="Cidade" class="ong__cidade">
+                    <select name="" class="ong__estado">
+                        <option value="" disabled selected hidden>Estado</option>
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TP">TO</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" placeholder="Bairro" class="ong__bairro">    
+                    <input type="number" placeholder="Número" class="ong__numero">
+                </div>
+                <input type="text" placeholder="Ponto de referência" class="ong__ponto-ref">
+                <input type="text" placeholder="Telefone" class="ong__tel" onkeypress="$(this).mask('(00) 00000-0009')">
+                <input type="text" placeholder="CNPJ" class="ong__cnpj" onkeypress="$(this).mask('00.000.000/0000-00')">
+                <input type="text" placeholder="E-mail" class="ong__email">
+                <div class="ong__password">
+                    <input type="password" placeholder="Crie uma senha" class="ong__senha">
+                    <input type="password" placeholder="Confirme sua senha" class="ong__conf-senha">
+                </div>
+                <button type="submit" class="ong__cadast">Cadastrar</button>
+             </form> 
+         </div>
+
+        <img class="main__home__img" src="../assets/images/walpapper.png" alt="">
+    </main>
+
+   
+</body>
+</html>

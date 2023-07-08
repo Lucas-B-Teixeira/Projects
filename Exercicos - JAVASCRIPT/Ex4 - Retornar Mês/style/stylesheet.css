@@ -1,0 +1,46 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card{
+    height: 50vh;
+    width: 60vw;
+    background-color: dimgrey;
+
+}
+
+.card__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    border-bottom: 3px white solid;
+}
+
+.card__box__input{
+    height: 30%;
+    width: 60%;
+    font-size: 2.7vw;
+    margin-right: 1vw;
+}
+
+.card__box__btn{
+    border: none;
+    height: 31%;
+    width: 15%;
+    font-size: 2.5vw;
+}
+
+.card__result{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

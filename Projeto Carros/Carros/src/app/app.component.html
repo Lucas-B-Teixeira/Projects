@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section class="main__newcar">
+            <div class="main__newcar__box">
+                <div class="main__newcar__box__img">
+                    <img class="main__newcar__box__img__foto" src="https://image.winudf.com/v2/image/Y29tLkNhcldhbGxwcm8uRm9yZFdhbGxwYXBlcl9zY3JlZW5fNF8xNTM1ODQ5MTMzXzAxMg/screen-0.jpg?fakeurl=1&type=.webp" alt="">
+                </div>
+                <div class="main__newcar__box__conteiner">
+                    <h1 class="main__newcar__box__conteiner__title">CADASTRE UM CARRO</h1>                    
+                    <form (submit)="newcar(formMarca.value, formModelo.value, formAno.value, formCor.value)" 
+                    class="main__newcar__box__conteiner__inputs">
+                        
+                        <label for="marca">Marca:</label>
+                        <input ngModel #formMarca="ngModel" requiredminlength="3" name="marca" type="text" 
+                        id="marca" class="main__newcar__box__conteiner__inputs__marca">
+                        
+                        <label for="modelo">Modelo:</label>
+                        <input ngModel #formModelo="ngModel" required minlength="3" name="modelo" type="text"
+                         id="modelo" class="main__newcar__box__conteiner__inputs__modelo">
+                        
+                        <label for="ano">Ano:</label>
+                        <input ngModel #formAno="ngModel" required minlength="4" name="ano" type="number"
+                         id="ano" class="main__newcar__box__conteiner__inputs__ano">
+                        
+                        <label for="cor">Cor:</label>
+                        <select ngModel #formCor="ngModel" name="cor" 
+                        id="cor" class="main__newcar__box__conteiner__inputs__cor">
+                            <option value="branco">Branco</option>
+                            <option value="preto">Preto</option>
+                            <option value="prata">Prata</option>
+                            <option value="vermelho">Vermelho</option>
+                            <option value="cinza">Cinza</option>
+                            <option value="azul">Azul</option>
+                        </select>
+        
+                        <button [disabled]="formMarca.invalid || formModelo.invalid || formAno.invalid || formCor.invalid" 
+                        type="submit" class="main__newcar__box__conteiner__inputs__btn">Cadastrar</button>
+                    </form> 
+
+                    <h6 *ngIf="formMarca.value.length == 0 || formModelo.value.length == 0 || formAno.value.length == 0 
+                    || formCor.value.length == 0" class="main__newcar__box__conteiner__error" >Todos os campos são obrigatórios!</h6>
+
+                </div>
+                <div class="main__newcar__box__rotate"></div>
+            </div>
+            <div class="main__newcar__box__vermais"><a href="#cards">Ver Mais</a></div>
+        </section>
+
+        <section id="cards">
+            <div class="box__cards">
+                <ul>
+                    <div *ngFor="let carro of cars" class="box__cards__cars">
+                        <div class="box__cards__cars__img">
+                            <img class="box__cards__cars__img__foto" src="{{ carro.foto }}" alt="">
+                        </div>
+
+                        <div class="box__cards__cars__marca">
+                            <h4>Marca:</h4>
+                            <h4>{{ carro.marca }}</h4>
+                        </div>
+
+                        <div class="box__cards__cars__modelo">
+                            <h4>Modelo:</h4>
+                            <h4>{{ carro.modelo }}</h4>
+                        </div>
+
+                        <div class="box__cards__cars__ano">
+                            <h4>Ano:</h4>
+                            <h4>{{ carro.ano }}</h4>
+                        </div>
+
+                        <div class="box__cards__cars__cor">
+                            <h4>Cor:</h4>
+                            <h4>{{ carro.cor }}</h4>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

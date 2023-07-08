@@ -1,0 +1,3697 @@
+body{
+    margin: 0px;
+    width: 100vw;
+}
+
+/*---------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1281px) {
+    
+
+    .header{
+        height: 7vh;
+        background-color:  rgb(242, 243, 243);
+        display: flex;
+        margin: 0;
+        width: 99vw;
+        
+    }
+
+    .header__logo{
+        height: 5vh;
+        padding: 1vh;
+        padding-left: 5vw;
+    }
+
+    .header__navigation{
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        padding-left: 35vw;
+        width: 50vw;  
+    }
+
+    .header__navigation__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 25vw;
+        font-family:Poppins;
+        font: bold;
+    }
+
+    .header__user{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 25vw;
+        font-family:Poppins;
+        align-items: center;
+        
+    }
+
+    .header__user__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 15vw;
+        font-family:Poppins;
+        align-items: center;
+    }
+
+
+    .header__user__list__singup{
+        display: flex;
+        align-items: center;
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        padding: 5%;
+        margin: 3vh;
+        border-radius: 1vh;
+        height: 0.5vh;
+    }
+    .header__navigation__list__home, .header__navigation__list__portifolio,
+    .header__navigation__list__how, .header__navigation__list__team,
+    .header__user__list__login, .header__user__list__singup{
+        font-size: 1.5vh;
+        font-size: 0.8vw;
+        transition: all 0.3s ease;
+    }
+
+    .header__navigation__list__home:hover, .header__navigation__list__portifolio:hover,
+    .header__navigation__list__how:hover, .header__navigation__list__team:hover,
+    .header__user__list__login:hover{
+        color: rgb(145, 137, 152);
+        font-size: 2.5vh;
+        font-size: 1.3vw;
+    }
+
+    .header__user__list__singup:hover{
+        padding: 6%;
+        font-size: 2vh;
+        font-size: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main{
+        display: grid;
+        grid-template-rows: 85vh 3.5vh 200vh;
+        background-color: rgb(242, 243, 243);
+        width: 99vw;
+    }
+
+    .main__home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 99vw;
+    }
+
+    .main__home__image{
+        height: 82vh;
+        width: 47vw;
+    }
+
+    .main__home__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @font-face{
+        font-family: Poppins;
+        src: url('../assets/fontes/Poppins-Light.ttf');
+    }
+
+    .main__home__title{
+        font-size: 7.5vh;
+        padding: 5% 0% 0% 11.5vw;
+        margin-bottom: 2vh;
+        width: 40vw;
+        font-family:Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__sub__title{
+        font-size: 2.5vh;
+        padding-left: 11.5vw;
+        margin: 0;
+        width: 70%;
+        font-family: Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__input{
+        height: 7vh;
+        width: 25vw;
+        margin: 5% 0% 0% 11.5vw;
+        background-color:  rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .main__home__input__btn{
+        height: 70%;
+        width: 8vw;
+        border-radius: 0.5vh;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(81, 81, 255);
+        margin-right: 0.5vw;
+        font-family:Poppins;
+        font-size: 1.4vh;
+        font-size: 0.7vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__home__input__btn:hover{
+        height: 80%;
+        width: 9vw;
+        font-size: 2vh;
+        font-size: 1vw;
+        margin-right: 0.2vw;
+    }
+
+    .main__home__input__email{
+        height: 70%;
+        width: 18vw;
+        border: 0px;
+        outline: 0;
+        padding-left: 2vh;
+        font-size: 1.5vh;
+        font-size: 0.75vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__partners{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 99vw;
+    }
+
+    .main__partners__image{
+        height: 100%;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .middle{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        width: 99vw;
+    }
+
+    .main__anuncio{
+        display: grid;
+        grid-template-columns: 49vw 49vw;
+        grid-template-rows: 100vh 100vh;
+        background-color:  rgb(242, 243, 243);
+    }
+
+    .main__anuncio__left{
+        display: grid;
+        grid-template-rows: 16vh 13vh 13vh 13vh;
+        margin-top: 19vh;
+    }
+
+    .main__anuncio__left__title{
+        font-size: 5vh;
+        font-size: 2.5vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        padding-left: 25vw;
+        height: 13vh;
+        width: 30vw;
+        margin-top: 0;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        padding-left: 30vw;
+        width: 25vw;
+        margin-top: 1vh;
+    }
+
+    .main__anuncio__left__img1, .main__anuncio__left__img3{
+        height: 3vh;
+        margin-right: 3vw;
+    }
+
+    .main__anuncio__left__img2{
+        height: 3vh;
+        margin-right: 2vw;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        display: flex;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__anuncio__left__text__title1, .main__anuncio__left__text__title2, .main__anuncio__left__text__title3{
+        margin: 0px;
+        font-size: 2vh;
+        font-size: 1vw;
+    }
+
+    .main__anuncio__left__text__p1, .main__anuncio__left__text__p2, .main__anuncio__left__text__p3{
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        margin: 0px;
+        color: dimgray;
+        width: 17vw;
+    }
+
+    .main__anuncio__right{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .main__anuncio__right__image{
+        height: 60vh;
+        width: 30vw;
+        margin-left: 7vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 99vw;
+    }
+
+    .main__services__text{
+        font-family: Poppins;
+        width: 60vw;
+        margin-left: 0vw;
+    }
+
+    .main__services__text__title{
+        font-size: 5vh;
+        font-size: 2.5vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        margin: 0vh 0vh 1vh 5vw;
+        display: flex;
+    }
+
+    .main__services__text__p{
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        font-family: Poppins;
+        margin: 0vh 0vh 2vh 5vw;
+        width: 29vw;
+    }
+
+    .main__services__division{
+        display: grid;
+        grid-template-columns: 16vw 16vw 16vw ;
+        grid-row: 30vh 30vh;
+        grid-gap: 2vh;
+        margin-top: 2vh;
+        
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end, .main__services__division__more{
+        height: 30vh;
+        width: 16vw;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+        border-radius: 1vh;
+    }
+
+    .main__services__division__mobile:hover, .main__services__division__photoshop:hover, .main__services__division__copywriting:hover, .main__services__division__brand:hover,
+    .main__services__division__end__to__end:hover{
+        background-color: rgb(240, 240, 240);
+    }
+
+    .main__services__division__more:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+    .main__services__division__photoshop__img, .main__services__division__copywriting__img, .main__services__division__brand__img{
+        width: 2.3vw;
+        margin-left: 2vw;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    .main__services__division__mobile__img, .main__services__division__end__to__end__img{
+        width: 2vw;
+        margin-left: 2vw;
+        margin-top: 4vh;
+        margin-bottom: 4.7vh
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end{
+        display: flex;
+        flex-direction: column;
+        font-family: poppins;
+        
+    }
+
+    .main__services__division__mobile__title, .main__services__division__photoshop__title, .main__services__division__copywriting__title, .main__services__division__brand__title,
+    .main__services__division__end__to__end__title{
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        height: 3vh;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__p, .main__services__division__photoshop__p, .main__services__division__copywriting__p, .main__services__division__brand__p,
+    .main__services__division__end__to__end__p{
+        font-size: 1.3vh;
+        font-size: 0.6vw;
+        width: 12vw;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__button, .main__services__division__photoshop__button, .main__services__division__copywriting__button, .main__services__division__brand__button,
+    .main__services__division__end__to__end__button{
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        border: none;
+        font-family: Poppins;
+        background: none;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__button:hover, .main__services__division__photoshop__button:hover, .main__services__division__copywriting__button:hover, .main__services__division__brand__button:hover,
+    .main__services__division__end__to__end__button:hover{
+        cursor:pointer;
+    }
+
+    .main__services__division__more{
+        background-color: rgb(58, 91, 221);
+        font-family: poppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__services__division__more__text{
+        margin: 0px;
+        font-size: 3vh;
+        font-size: 1.5vw;
+    }
+
+    .main__services__division__more__seta{
+        font-size: 10vh;
+        font-size: 5vw;
+        font-family: poppinsLight;
+        display: flex;
+        align-items: center;
+        height: 3vh;
+        margin: 0px;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev{
+        display: grid;
+        grid-template-rows: 100vh 50vh;
+        margin-top: 10vh;
+        width: 99vw;
+    }
+
+    .main__prev__top{
+        display: grid;
+        grid-template-columns: 43vw 57vw;
+        grid-template-rows: 60vh 40vh;
+    }
+
+    .main__prev__top__top__left{
+        display: grid;
+        grid-template-columns: 15vw 15vw;
+        grid-template-rows: 25vh 25vh;
+        grid-gap: 3vh;
+        margin-left: 8vw;
+        margin-top: 5vh;
+    }
+
+    @font-face {
+        font-family: PoppinsLight;
+        src: url(/assets/fontes/Poppins-ExtraLight.ttf);
+    }
+
+    .main__prev__top__top__left__fumiture, .main__prev__top__top__left__int__design, .main__prev__top__top__left__product{
+        background-color: rgb(58, 91, 221);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__left__fumiture:hover, .main__prev__top__top__left__int__design:hover, .main__prev__top__top__left__product:hover{
+        background-color: rgb(13, 48, 185);
+    } 
+
+    .main__prev__top__top__left__plush{
+        background: none;
+
+    }
+
+    .main__prev__top__top__left__plus{
+        background-color: rgb(199, 200, 202);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        font-size: 1.7vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__left__plus:hover{
+        background-color: rgb(139, 141, 145);
+    }
+
+    .main__prev__top__top__left__fumiture__text, .main__prev__top__top__left__int__design__text, .main__prev__top__top__left__product__text{
+        margin: 0vh;
+        margin-top: 2vh;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__left__fumiture__plus, .main__prev__top__top__left__int__design__plus, .main__prev__top__top__left__product__plus{
+        margin: 0vh;
+        font-size: 6vh;
+        font-size: 3vw;
+        font-family: PoppinsLight;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__right{
+        display: grid;
+        grid-template-rows: 7vh 25vh 2vh;
+        grid-gap: 1vh;
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
+
+    .main__prev__top__top__right__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 5vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__right__btn__top__next:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+
+    .main__prev__top__top__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+    }
+
+    .main__prev__top__top__right__text{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 5vh;
+        font-size: 2.5vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__top__right__btn__bottom__xdesign, .main__prev__top__top__right__btn__bottom__ndesign, .main__prev__top__top__right__btn__bottom__xx{
+        border: none;
+        color: rgb(101, 14, 182);
+        font-family: poppins;
+    }
+
+    .main__prev__top__top__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__right__user__img{
+        height: 3vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__top__bottom__left{
+        display: flex;
+        margin-left: 8vw;
+    }
+
+    .main__prev__top__bottom__right{
+        display: flex;
+        margin-left: 3vw;
+    }
+
+    .main__prev__top__bottom__left__img, .main__prev__top__bottom__right__img{
+        height: 35vh;
+    }
+
+    .main__prev__top__bottom__left__info, .main__prev__top__bottom__right__info{
+        display: grid;
+        grid-template-rows: 6vh 12vh 2vh;
+        grid-gap: 1vh;
+        margin-left: 2vw;
+        margin-top: 10vh;
+    }
+
+    .main__prev__top__bottom__left__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 5vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__bottom__left__btn__top__next:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+
+    .main__prev__top__bottom__right__btn__top__next{
+        background-color: rgb(217, 78, 78);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 5vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__bottom__right__btn__top__next:hover{
+        background-color: rgb(180, 51, 51);
+    }
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__bottom__left__btn__top__date, .main__prev__bottom__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+    }
+
+    .main__prev__top__bottom__left__text, .main__prev__top__bottom__right__text{
+        height: 6vh;
+        font-family: PoppinsLight;
+        font-size: 2.5vh;
+        font-size: 1.2vw;
+        width: 20vw;
+    }
+
+    .main__prev__top__bottom__left__text__h, .main__prev__top__bottom__right__text__h{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 2vh;
+        font-size: 1vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__bottom__left__user, .main__prev__top__bottom__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__left__user__img, .main__prev__top__top__right__user__img{
+        height: 4vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+
+    .main__banner{
+        height: 50vh;
+        display: grid;
+        background: linear-gradient(rgb(233,233,233), rgb(228,228,228) );
+        grid-template-columns: 50vw 50vw;
+        width: 99vw;
+    }
+
+    .main__banner__img{
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .main__banner__text__title{
+        font-family: Poppins;
+        font-size: 7vh;
+        font-size: 3.5vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        margin-left: 1vw;
+        width: 37vw;
+    }
+
+    .main__banner__text__p{
+        font-family: Poppins;
+        font-size: 3vh;
+        font-size: 1.5vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        width: 37vw;
+        margin-right: 5vw;
+        margin-left: 1vw;
+    }
+
+    .main__banner__text__btn{
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-radius: 1vh;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        border: none;
+        height: 7vh;
+        width: 8vw;
+        margin-left: 30vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__banner__text__btn:hover{
+        background-color: rgb(13, 48, 185);
+    }
+    /*---------------------------------------------------------------------------*/
+
+    .footer{
+        display: grid;
+        grid-template-columns: 40vw 20vw 20vw 20vw;
+        height: 50vh;
+        width: 99vw;
+    }
+
+    .footer__column1{
+        display: flex;
+        justify-content: center;
+        margin-left: 5vw;
+        flex-direction: column;
+    }
+
+    .footer__column1__text{
+        width: 18vw;
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        font-family: Poppins;
+    }
+
+    .footer__column1__redes{
+        display: flex;
+        width: 10vw;
+        justify-content: space-between;
+    }
+
+    .footer__column1__redes__img{
+        margin-top: 5vh;
+        height: 2vh;
+    }
+
+    .footer__column2, .footer__column3, .footer__column4{
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__column2__list, .footer__column3__list, .footer__column4__list{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: Poppins;
+        color: rgb(15, 15, 87);
+    }
+
+}
+
+@media only screen and (min-width: 841px) and (max-width: 1280px) {
+    
+
+    .header{
+        height: 7vh;
+        background-color:  rgb(242, 243, 243);
+        display: flex;
+        margin: 0;
+        width: 99vw;
+        
+    }
+
+    .header__logo{
+        height: 5vh;
+        padding: 1vh;
+        padding-left: 5vw;
+    }
+
+    .header__navigation{
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-around;
+        padding-left: 25vw;
+        width: 50vw;  
+    }
+
+    .header__navigation__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 30vw;
+        font-family:Poppins;
+        font: bold;
+    }
+
+    .header__user{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20vw;
+        font-family:Poppins;
+        align-items: center;
+        
+    }
+
+    .header__user__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 20vw;
+        font-family:Poppins;
+        align-items: center;
+    }
+
+
+    .header__user__list__singup{
+        display: flex;
+        align-items: center;
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        padding: 5%;
+        margin: 3vh;
+        border-radius: 1vh;
+        height: 0.5vh;
+    }
+    .header__navigation__list__home, .header__navigation__list__portifolio,
+    .header__navigation__list__how, .header__navigation__list__team,
+    .header__user__list__login, .header__user__list__singup{
+        font-size: 1.5vh;
+        font-size: 1.2vw;
+        transition: all 0.3s ease;
+    }
+
+    .header__navigation__list__home:hover, .header__navigation__list__portifolio:hover,
+    .header__navigation__list__how:hover, .header__navigation__list__team:hover,
+    .header__user__list__login:hover{
+        color: rgb(145, 137, 152);
+        font-size: 2.5vh;
+        font-size: 1.4vw;
+    }
+
+    .header__user__list__singup:hover{
+        padding: 6%;
+        font-size: 2vh;
+        font-size: 1.2vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main{
+        display: grid;
+        grid-template-rows: 85vh 3.5vh 200vh;
+        background-color: rgb(242, 243, 243);
+        width: 99vw;
+    }
+
+    .main__home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 99vw;
+    }
+
+    .main__home__image{
+        height: 82vh;
+        display: none;
+        width: 48vw;
+    }
+
+    .main__home__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @font-face{
+        font-family: Poppins;
+        src: url('../assets/fontes/Poppins-Light.ttf');
+    }
+
+    .main__home__title{
+        font-size: 7.5vh;
+        padding: 5% 0% 0% 11.5vw;
+        margin-bottom: 2vh;
+        width: 80vw;
+        font-family:Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__sub__title{
+        font-size: 2.5vh;
+        padding-left: 11.5vw;
+        margin: 0;
+        width: 70%;
+        font-family: Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__input{
+        height: 7vh;
+        width: 45vw;
+        margin: 5% 0% 0% 11.5vw;
+        background-color:  rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .main__home__input__btn{
+        height: 70%;
+        width: 10vw;
+        border-radius: 0.5vh;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(81, 81, 255);
+        margin-right: 0.5vw;
+        font-family:Poppins;
+        font-size: 1.4vh;
+        font-size: 1.3vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__home__input__btn:hover{
+        height: 80%;
+        width: 9vw;
+        font-size: 2vh;
+        font-size: 1vw;
+        margin-right: 0.2vw;
+    }
+
+    .main__home__input__email{
+        height: 70%;
+        width: 40vw;
+        border: 0px;
+        outline: 0;
+        padding-left: 2vh;
+        font-size: 1.5vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__partners{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 99vw;
+    }
+
+    .main__partners__image{
+        height: 100%;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .middle{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        width: 99vw;
+    }
+
+    .main__anuncio{
+        display: grid;
+        grid-template-columns: 49vw 49vw;
+        grid-template-rows: 100vh 100vh;
+        background-color:  rgb(242, 243, 243);
+    }
+
+    .main__anuncio__left{
+        display: grid;
+        grid-template-rows: 16vh 13vh 13vh 13vh;
+        margin-top: 19vh;
+    }
+
+    .main__anuncio__left__title{
+        font-size: 5vh;
+        font-size: 2.5vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        padding-left: 25vw;
+        height: 13vh;
+        width: 30vw;
+        margin-top: 0;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        padding-left: 30vw;
+        width: 25vw;
+        margin-top: 1vh;
+    }
+
+    .main__anuncio__left__img1, .main__anuncio__left__img3{
+        height: 3vh;
+        margin-right: 3vw;
+    }
+
+    .main__anuncio__left__img2{
+        height: 3vh;
+        margin-right: 2vw;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        display: flex;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__anuncio__left__text__title1, .main__anuncio__left__text__title2, .main__anuncio__left__text__title3{
+        margin: 0px;
+        font-size: 2vh;
+        font-size: 1vw;
+    }
+
+    .main__anuncio__left__text__p1, .main__anuncio__left__text__p2, .main__anuncio__left__text__p3{
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        margin: 0px;
+        color: dimgray;
+        width: 17vw;
+    }
+
+    .main__anuncio__right{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .main__anuncio__right__image{
+        height: 60vh;
+        width: 30vw;
+        margin-left: 7vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 99vw;
+    }
+
+    .main__services__text{
+        font-family: Poppins;
+        width: 60vw;
+        margin-left: 0vw;
+    }
+
+    .main__services__text__title{
+        font-size: 5vh;
+        font-size: 2.5vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        margin: 0vh 0vh 1vh 5vw;
+        display: flex;
+    }
+
+    .main__services__text__p{
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        font-family: Poppins;
+        margin: 0vh 0vh 2vh 5vw;
+        width: 29vw;
+    }
+
+    .main__services__division{
+        display: grid;
+        grid-template-columns: 16vw 16vw 16vw ;
+        grid-row: 30vh 30vh;
+        grid-gap: 2vh;
+        margin-top: 2vh;
+        
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end, .main__services__division__more{
+        height: 30vh;
+        width: 16vw;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+        border-radius: 1vh;
+    }
+
+    .main__services__division__mobile:hover, .main__services__division__photoshop:hover, .main__services__division__copywriting:hover, .main__services__division__brand:hover,
+    .main__services__division__end__to__end:hover{
+        background-color: rgb(240, 240, 240);
+    }
+
+    .main__services__division__more:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+    .main__services__division__photoshop__img, .main__services__division__copywriting__img, .main__services__division__brand__img{
+        width: 2.3vw;
+        margin-left: 2vw;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    .main__services__division__mobile__img, .main__services__division__end__to__end__img{
+        width: 2vw;
+        margin-left: 2vw;
+        margin-top: 4vh;
+        margin-bottom: 4.7vh
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end{
+        display: flex;
+        flex-direction: column;
+        font-family: poppins;
+        
+    }
+
+    .main__services__division__mobile__title, .main__services__division__photoshop__title, .main__services__division__copywriting__title, .main__services__division__brand__title,
+    .main__services__division__end__to__end__title{
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        height: 3vh;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__p, .main__services__division__photoshop__p, .main__services__division__copywriting__p, .main__services__division__brand__p,
+    .main__services__division__end__to__end__p{
+        font-size: 1.3vh;
+        font-size: 0.6vw;
+        width: 12vw;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__button, .main__services__division__photoshop__button, .main__services__division__copywriting__button, .main__services__division__brand__button,
+    .main__services__division__end__to__end__button{
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        border: none;
+        font-family: Poppins;
+        background: none;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__button:hover, .main__services__division__photoshop__button:hover, .main__services__division__copywriting__button:hover, .main__services__division__brand__button:hover,
+    .main__services__division__end__to__end__button:hover{
+        cursor:pointer;
+    }
+
+    .main__services__division__more{
+        background-color: rgb(58, 91, 221);
+        font-family: poppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__services__division__more__text{
+        margin: 0px;
+        font-size: 3vh;
+        font-size: 1.5vw;
+    }
+
+    .main__services__division__more__seta{
+        font-size: 10vh;
+        font-size: 5vw;
+        font-family: poppinsLight;
+        display: flex;
+        align-items: center;
+        height: 3vh;
+        margin: 0px;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev{
+        display: grid;
+        grid-template-rows: 100vh 50vh;
+        margin-top: 10vh;
+        width: 99vw;
+    }
+
+    .main__prev__top{
+        display: grid;
+        grid-template-columns: 43vw 57vw;
+        grid-template-rows: 60vh 40vh;
+    }
+
+    .main__prev__top__top__left{
+        display: grid;
+        grid-template-columns: 15vw 15vw;
+        grid-template-rows: 25vh 25vh;
+        grid-gap: 3vh;
+        margin-left: 8vw;
+        margin-top: 5vh;
+    }
+
+    @font-face {
+        font-family: PoppinsLight;
+        src: url(/assets/fontes/Poppins-ExtraLight.ttf);
+    }
+
+    .main__prev__top__top__left__fumiture, .main__prev__top__top__left__int__design, .main__prev__top__top__left__product{
+        background-color: rgb(58, 91, 221);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__left__fumiture:hover, .main__prev__top__top__left__int__design:hover, .main__prev__top__top__left__product:hover{
+        background-color: rgb(13, 48, 185);
+    } 
+
+    .main__prev__top__top__left__plush{
+        background: none;
+
+    }
+
+    .main__prev__top__top__left__plus{
+        background-color: rgb(199, 200, 202);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        font-size: 1.7vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__left__plus:hover{
+        background-color: rgb(139, 141, 145);
+    }
+
+    .main__prev__top__top__left__fumiture__text, .main__prev__top__top__left__int__design__text, .main__prev__top__top__left__product__text{
+        margin: 0vh;
+        margin-top: 2vh;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__left__fumiture__plus, .main__prev__top__top__left__int__design__plus, .main__prev__top__top__left__product__plus{
+        margin: 0vh;
+        font-size: 6vh;
+        font-size: 3vw;
+        font-family: PoppinsLight;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__right{
+        display: grid;
+        grid-template-rows: 7vh 25vh 2vh;
+        grid-gap: 1vh;
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
+
+    .main__prev__top__top__right__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 5vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__right__btn__top__next:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+
+    .main__prev__top__top__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+    }
+
+    .main__prev__top__top__right__text{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 5vh;
+        font-size: 2.5vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__top__right__btn__bottom__xdesign, .main__prev__top__top__right__btn__bottom__ndesign, .main__prev__top__top__right__btn__bottom__xx{
+        border: none;
+        color: rgb(101, 14, 182);
+        font-family: poppins;
+    }
+
+    .main__prev__top__top__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__right__user__img{
+        height: 3vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__top__bottom__left{
+        display: flex;
+        margin-left: 8vw;
+    }
+
+    .main__prev__top__bottom__right{
+        display: flex;
+        margin-left: 3vw;
+    }
+
+    .main__prev__top__bottom__left__img, .main__prev__top__bottom__right__img{
+        height: 35vh;
+    }
+
+    .main__prev__top__bottom__left__info, .main__prev__top__bottom__right__info{
+        display: grid;
+        grid-template-rows: 6vh 12vh 2vh;
+        grid-gap: 1vh;
+        margin-left: 2vw;
+        margin-top: 10vh;
+    }
+
+    .main__prev__top__bottom__left__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 5vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__bottom__left__btn__top__next:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+
+    .main__prev__top__bottom__right__btn__top__next{
+        background-color: rgb(217, 78, 78);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 5vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__bottom__right__btn__top__next:hover{
+        background-color: rgb(180, 51, 51);
+    }
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__bottom__left__btn__top__date, .main__prev__bottom__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+    }
+
+    .main__prev__top__bottom__left__text, .main__prev__top__bottom__right__text{
+        height: 6vh;
+        font-family: PoppinsLight;
+        font-size: 2.5vh;
+        font-size: 1.2vw;
+        width: 20vw;
+    }
+
+    .main__prev__top__bottom__left__text__h, .main__prev__top__bottom__right__text__h{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 2vh;
+        font-size: 1vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__bottom__left__user, .main__prev__top__bottom__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__left__user__img, .main__prev__top__top__right__user__img{
+        height: 4vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+
+    .main__banner{
+        height: 50vh;
+        display: grid;
+        background: linear-gradient(rgb(233,233,233), rgb(228,228,228) );
+        grid-template-columns: 50vw 50vw;
+        width: 99vw;
+    }
+
+    .main__banner__img{
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .main__banner__text__title{
+        font-family: Poppins;
+        font-size: 7vh;
+        font-size: 3.5vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        margin-left: 1vw;
+        width: 37vw;
+    }
+
+    .main__banner__text__p{
+        font-family: Poppins;
+        font-size: 3vh;
+        font-size: 1.5vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        width: 37vw;
+        margin-right: 5vw;
+        margin-left: 1vw;
+    }
+
+    .main__banner__text__btn{
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-radius: 1vh;
+        font-size: 1.8vh;
+        font-size: 0.9vw;
+        border: none;
+        height: 7vh;
+        width: 8vw;
+        margin-left: 30vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__banner__text__btn:hover{
+        background-color: rgb(13, 48, 185);
+    }
+    /*---------------------------------------------------------------------------*/
+
+    .footer{
+        display: grid;
+        grid-template-columns: 40vw 20vw 20vw 20vw;
+        height: 50vh;
+        width: 99vw;
+    }
+
+    .footer__column1{
+        display: flex;
+        justify-content: center;
+        margin-left: 5vw;
+        flex-direction: column;
+    }
+
+    .footer__column1__text{
+        width: 18vw;
+        font-size: 1.7vh;
+        font-size: 0.9vw;
+        font-family: Poppins;
+    }
+
+    .footer__column1__redes{
+        display: flex;
+        width: 10vw;
+        justify-content: space-between;
+    }
+
+    .footer__column1__redes__img{
+        margin-top: 5vh;
+        height: 2vh;
+    }
+
+    .footer__column2, .footer__column3, .footer__column4{
+        display: flex;
+        align-items: center;
+        font-size: 2vh;
+        font-size: 1vw;
+    }
+
+    .footer__column2__list, .footer__column3__list, .footer__column4__list{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: Poppins;
+        color: rgb(15, 15, 87);
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 840px) {
+    
+
+    .header{
+        height: 7vh;
+        background-color:  rgb(242, 243, 243);
+        display: flex;
+        margin: 0;
+        width: 99vw;
+        
+    }
+
+    .header__logo{
+        height: 5vh;
+        padding: 1vh;
+        padding-left: 5vw;
+    }
+
+    .header__navigation{
+        color: rgb(0, 0, 0);
+        display: none;
+        justify-content: space-around;
+        padding-left: 25vw;
+        width: 50vw;  
+    }
+
+    .header__navigation__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 25vw;
+        font-family:Poppins;
+        font: bold;
+    }
+
+    .header__user{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 99vw;
+        font-family:Poppins;
+        align-items: center;
+        font-size: 3vh;
+        
+    }
+
+    .header__user__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 45vw;
+        font-family:Poppins;
+        align-items: center;
+    }
+
+
+    .header__user__list__singup{
+        display: flex;
+        align-items: center;
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        padding: 5%;
+        margin: 3vh;
+        border-radius: 1vh;
+        height: 0.5vh;
+    }
+    .header__navigation__list__home, .header__navigation__list__portifolio,
+    .header__navigation__list__how, .header__navigation__list__team,
+    .header__user__list__login, .header__user__list__singup{
+        font-size: 1vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main{
+        display: grid;
+        grid-template-rows: 85vh 3.5vh 200vh;
+        background-color: rgb(242, 243, 243);
+        width: 99vw;
+    }
+
+    .main__home{
+    display: flex;
+    width: 99vw;
+    }
+
+    .main__home__image{
+        height: 82vh;
+        width: 48vw;
+        display: none;
+    }
+
+    .main__home__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @font-face{
+        font-family: Poppins;
+        src: url('../assets/fontes/Poppins-Light.ttf');
+    }
+
+    .main__home__title{
+        font-size: 6vh;
+        font-size: 10vw;
+        padding: 5% 0% 0% 11.5vw;
+        margin-bottom: 2vh;
+        width: 80vw;
+        font-family:Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__sub__title{
+        font-size: 2.5vh;
+        padding-left: 11.5vw;
+        margin: 0;
+        width: 80vw;
+        font-family: Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__input{
+        height: 7vh;
+        width: 60vw;
+        margin: 5% 0% 0% 11.5vw;
+        background-color:  rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .main__home__input__btn{
+        height: 70%;
+        width: 15vw;
+        border-radius: 0.5vh;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(81, 81, 255);
+        margin-right: 0.5vw;
+        font-family:Poppins;
+        font-size: 1.4vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__home__input__email{
+        height: 70%;
+        width: 45vw;
+        border: 0px;
+        outline: 0;
+        padding-left: 2vh;
+        font-size: 1.5vh;
+        font-size: 3vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__partners{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 97vw;
+    }
+
+    .main__partners__image{
+        height: 70%;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .middle{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        width: 98vw;
+    }
+
+    .main__anuncio{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        background-color:  rgb(242, 243, 243);
+        width: 98vw;
+    }
+
+    .main__anuncio__left{
+        display: grid;
+        grid-template-rows: 16vh 13vh 13vh 13vh;
+        margin-top: 19vh;
+    }
+
+    .main__anuncio__left__title{
+        font-size: 3vh;
+        font-size: 6vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        padding-left: 25vw;
+        height: 13vh;
+        width: 80vw;
+        margin-top: 1vh;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        padding-left: 30vw;
+        width: 70vw;
+        margin-top: 5vh;
+    }
+
+    .main__anuncio__left__img1, .main__anuncio__left__img3{
+        height: 3vh;
+        margin-right: 3vw;
+    }
+
+    .main__anuncio__left__img2{
+        height: 3vh;
+        margin-right: 2vw;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        display: flex;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__anuncio__left__text__title1, .main__anuncio__left__text__title2, .main__anuncio__left__text__title3{
+        margin: 0px;
+        font-size: 2vh;
+        font-size: 3vw;
+    }
+
+    .main__anuncio__left__text__p1, .main__anuncio__left__text__p2, .main__anuncio__left__text__p3{
+        font-size: 1.7vh;
+        font-size: 2vw;
+        margin: 0px;
+        color: dimgray;
+        width: 40vw;
+    }
+
+    .main__anuncio__right{
+        display: none;
+        align-items: center;
+
+    }
+
+    .main__anuncio__right__image{
+        height: 60vh;
+        width: 30vw;
+        margin-left: 7vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 99vw;
+    }
+
+    .main__services__text{
+        font-family: Poppins;
+        width: 80vw;
+        margin-left: 0vw;
+    }
+
+    .main__services__text__title{
+        font-size: 2.5vh;
+        font-size: 4vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        margin: 0vh 0vh 1vh 1vw;
+        display: flex;
+    }
+
+    .main__services__text__p{
+        font-size: 1.7vh;
+        font-size: 2vw;
+        font-family: Poppins;
+        margin: 0vh 0vh 2vh 1vw;
+        width: 68vw;
+    }
+
+    .main__services__division{
+        display: grid;
+        grid-template-columns: 25vw 25vw 25vw ;
+        grid-row: 30vh 30vh;
+        grid-gap: 2vh;
+        margin-top: 2vh;
+        
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end, .main__services__division__more{
+        height: 30vh;
+        width: 25vw;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+        border-radius: 1vh;
+    }
+
+    .main__services__division__mobile:hover, .main__services__division__photoshop:hover, .main__services__division__copywriting:hover, .main__services__division__brand:hover,
+    .main__services__division__end__to__end:hover{
+        background-color: rgb(240, 240, 240);
+    }
+
+    .main__services__division__more:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+    .main__services__division__photoshop__img, .main__services__division__copywriting__img, .main__services__division__brand__img{
+        width: 4.3vw;
+        margin-left: 4vw;
+        margin-top: 4vh;
+        margin-bottom: 5vh;
+    }
+
+    .main__services__division__mobile__img, .main__services__division__end__to__end__img{
+        width: 4vw;
+        margin-left: 4vw;
+        margin-top: 4vh;
+        margin-bottom: 4.7vh
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end{
+        display: flex;
+        flex-direction: column;
+        font-family: poppins;
+        
+    }
+
+    .main__services__division__mobile__title, .main__services__division__photoshop__title, .main__services__division__copywriting__title, .main__services__division__brand__title,
+    .main__services__division__end__to__end__title{
+        font-size: 3vh;
+        font-size: 1.8vw;
+        height: 3vh;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__p, .main__services__division__photoshop__p, .main__services__division__copywriting__p, .main__services__division__brand__p,
+    .main__services__division__end__to__end__p{
+        font-size: 2vh;
+        font-size: 1.4vw;
+        width: 20vw;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__button, .main__services__division__photoshop__button, .main__services__division__copywriting__button, .main__services__division__brand__button,
+    .main__services__division__end__to__end__button{
+        font-size: 4vh;
+        font-size: 2vw;
+        border: none;
+        font-family: Poppins;
+        background: none;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: 2vw;
+    }
+
+
+    .main__services__division__more{
+        background-color: rgb(58, 91, 221);
+        font-family: poppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__services__division__more__text{
+        margin: 0px;
+        font-size: 3vh;
+        font-size: 3vw;
+    }
+
+    .main__services__division__more__seta{
+        font-size: 10vh;
+        font-size: 7vw;
+        font-family: poppinsLight;
+        display: flex;
+        align-items: center;
+        height: 3vh;
+        margin: 0px;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev{
+        display: grid;
+        grid-template-rows: 100vh 20vh;
+        margin-top: 10vh;
+        width: 99vw;
+    }
+
+    .main__prev__top{
+        display: grid;
+        grid-template-columns: 55vw 43vw;
+        grid-template-rows: 40vh 40vh;
+    }
+
+    .main__prev__top__top__left{
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        grid-template-rows: 15vh 15vh;
+        grid-gap: 3vh;
+        margin-left: 8vw;
+        margin-top: 5vh;
+    }
+
+    @font-face {
+        font-family: PoppinsLight;
+        src: url(/assets/fontes/Poppins-ExtraLight.ttf);
+    }
+
+    .main__prev__top__top__left__fumiture, .main__prev__top__top__left__int__design, .main__prev__top__top__left__product{
+        background-color: rgb(58, 91, 221);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vh;
+        font-size: 1.3vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__left__plush{
+        background: none;
+
+    }
+
+    .main__prev__top__top__left__plus{
+        background-color: rgb(199, 200, 202);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__top__left__fumiture__text, .main__prev__top__top__left__int__design__text, .main__prev__top__top__left__product__text{
+        margin: 0vh;
+        margin-top: 2vh;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__left__fumiture__plus, .main__prev__top__top__left__int__design__plus, .main__prev__top__top__left__product__plus{
+        margin: 0vh;
+        font-size: 6vh;
+        font-size: 3vw;
+        font-family: PoppinsLight;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__right{
+        display: grid;
+        grid-template-rows: 7vh 10vh 2vh;
+        grid-gap: 1vh;
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
+
+    .main__prev__top__top__right__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__top__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+    }
+
+    .main__prev__top__top__right__text{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 5vh;
+        font-size: 2.5vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__top__right__btn__bottom__xdesign, .main__prev__top__top__right__btn__bottom__ndesign, .main__prev__top__top__right__btn__bottom__xx{
+        border: none;
+        color: rgb(101, 14, 182);
+        font-family: poppins;
+    }
+
+    .main__prev__top__top__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 2vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__right__user__img{
+        height: 3vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__top__bottom__left{
+        margin-left: 8vw;
+    }
+
+    .main__prev__top__bottom__right{
+        margin-left: 3vw;
+    }
+
+    .main__prev__top__bottom__left__img, .main__prev__top__bottom__right__img{
+        height: 25vh;
+        width: 35vw;
+    }
+
+    .main__prev__top__bottom__left__info, .main__prev__top__bottom__right__info{
+        display: grid;
+        grid-template-rows: 4vh 7vh 2vh;
+        grid-gap: 1vh;
+        margin-left: 2vw;
+    }
+
+    .main__prev__top__bottom__left__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__bottom__right__btn__top__next{
+        background-color: rgb(217, 78, 78);
+        border: none;
+        border-radius: 5vh;
+        height: 5vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__bottom__left__btn__top__date, .main__prev__bottom__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+    }
+
+    .main__prev__top__bottom__left__text, .main__prev__top__bottom__right__text{
+        height: 6vh;
+        font-family: PoppinsLight;
+        font-size: 2.5vh;
+        font-size: 2vw;
+        width: 35vw;
+        display: flex;
+    }
+
+    .main__prev__top__bottom__left__text__h, .main__prev__top__bottom__right__text__h{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 5vh;
+        font-size: 1vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__bottom__left__user, .main__prev__top__bottom__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__left__user__img, .main__prev__top__top__right__user__img{
+        height: 4vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+
+    .main__banner{
+        height: 25vh;
+        display: grid;
+        background: linear-gradient(rgb(233,233,233), rgb(228,228,228) );
+        grid-template-columns: 50vw 50vw;
+        width: 99vw;
+    }
+
+    .main__banner__img{
+        width: 50vw;
+        height: 25vh;
+    }
+
+    .main__banner__text__title{
+        font-family: Poppins;
+        font-size: 7vh;
+        font-size: 3.5vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        margin-left: 1vw;
+        width: 37vw;
+    }
+
+    .main__banner__text__p{
+        font-family: Poppins;
+        font-size: 3vh;
+        font-size: 1.5vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        width: 37vw;
+        margin-right: 5vw;
+        margin-left: 1vw;
+    }
+
+    .main__banner__text__btn{
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-radius: 0.5vh;
+        font-size: 1.8vh;
+        font-size: 1.4vw;
+        border: none;
+        height: 4vh;
+        width: 12vw;
+        margin-left: 26vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__banner__text__btn:hover{
+        background-color: rgb(13, 48, 185);
+    }
+    /*---------------------------------------------------------------------------*/
+
+    .footer{
+        display: grid;
+        grid-template-columns: 38vw 20vw 20vw 20vw;
+        height: 50vh;
+        width: 98vw;
+    }
+
+    .footer__column1{
+        display: flex;
+        justify-content: center;
+        margin-left: 5vw;
+        flex-direction: column;
+    }
+
+    .footer__column1__img{
+        height: 6vh;
+        width: 25vw;
+    }
+
+    .footer__column1__text{
+        width: 30vw;
+        font-size: 1.7vh;
+        font-size: 1.3vw;
+        font-family: Poppins;
+    }
+
+    .footer__column1__redes{
+        display: flex;
+        width: 30vw;
+        justify-content: space-between;
+    }
+
+    .footer__column1__redes__img{
+        margin-top: 5vh;
+        height: 2vh;
+    }
+
+    .footer__column2, .footer__column3, .footer__column4{
+        display: flex;
+        align-items: center;
+        font-size: 2vh;
+        font-size: 1.5vw;
+    }
+
+    .footer__column2__list, .footer__column3__list, .footer__column4__list{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: Poppins;
+        color: rgb(15, 15, 87);
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+    
+
+    .header{
+        height: 7vh;
+        background-color:  rgb(242, 243, 243);
+        display: flex;
+        margin: 0;
+        width: 99vw;
+        
+    }
+
+    .header__logo{
+        height: 5vh;
+        padding: 1vh;
+        padding-left: 5vw;
+    }
+
+    .header__navigation{
+        color: rgb(0, 0, 0);
+        display: none;
+        justify-content: space-around;
+        padding-left: 25vw;
+        width: 50vw;  
+    }
+
+    .header__navigation__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 25vw;
+        font-family:Poppins;
+        font: bold;
+    }
+
+    .header__user{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 99vw;
+        font-family:Poppins;
+        align-items: center;
+        font-size: 3vw;
+        
+    }
+
+    .header__user__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 45vw;
+        font-family:Poppins;
+        align-items: center;
+    }
+
+
+    .header__user__list__singup{
+        display: flex;
+        align-items: center;
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        padding: 5%;
+        margin: 3vh;
+        border-radius: 1vh;
+        height: 0.5vh;
+    }
+    .header__navigation__list__home, .header__navigation__list__portifolio,
+    .header__navigation__list__how, .header__navigation__list__team,
+    .header__user__list__login, .header__user__list__singup{
+        font-size: 1vh;
+        font-size: 3.8vw;
+        transition: all 0.3s ease;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main{
+        display: grid;
+        grid-template-rows: 85vh 10vh 200vh;
+        background-color: rgb(242, 243, 243);
+        width: 99vw;
+    }
+
+    .main__home{
+    display: flex;
+    width: 99vw;
+    margin-top: 15vh;
+    }
+
+    .main__home__image{
+        height: 82vh;
+        width: 48vw;
+        display: none;
+    }
+
+    .main__home__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @font-face{
+        font-family: Poppins;
+        src: url('../assets/fontes/Poppins-Light.ttf');
+    }
+
+    .main__home__title{
+        font-size: 6vh;
+        font-size: 10vw;
+        padding: 5% 0% 0% 11.5vw;
+        margin-bottom: 2vh;
+        width: 80vw;
+        font-family:Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__sub__title{
+        font-size: 2vh;
+        padding-left: 11.5vw;
+        margin: 0;
+        width: 80vw;
+        font-family: Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__input{
+        height: 7vh;
+        width: 70vw;
+        margin: 5% 0% 0% 11.5vw;
+        background-color:  rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .main__home__input__btn{
+        height: 70%;
+        width: 20vw;
+        border-radius: 0.5vh;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(81, 81, 255);
+        margin-right: 0.5vw;
+        font-family:Poppins;
+        font-size: 1.4vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__home__input__email{
+        height: 70%;
+        width: 45vw;
+        border: 0px;
+        outline: 0;
+        padding-left: 2vh;
+        font-size: 1.5vh;
+        font-size: 3.5vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__partners{
+        display: grid;
+        grid-template-columns:30vw 30vw 30vw;
+        grid-template-rows: 5vh 5vh;
+        width: 90vw;
+        margin-left: 10vw;
+    }
+
+    .main__partners__image{
+        height: 40%;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .middle{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        width: 98vw;
+    }
+
+    .main__anuncio{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        background-color:  rgb(242, 243, 243);
+        width: 98vw;
+    }
+
+    .main__anuncio__left{
+        display: grid;
+        grid-template-rows: 16vh 13vh 13vh 13vh;
+        margin-top: 19vh;
+    }
+
+    .main__anuncio__left__title{
+        font-size: 3vh;
+        font-size: 8vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        padding-left: 20vw;
+        height: 13vh;
+        width: 80vw;
+        margin-top: 1vh;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        padding-left: 25vw;
+        width: 70vw;
+        margin-top: 5vh;
+    }
+
+    .main__anuncio__left__img1, .main__anuncio__left__img3{
+        height: 3vh;
+        margin-right: 3vw;
+    }
+
+    .main__anuncio__left__img2{
+        height: 3vh;
+        margin-right: 2vw;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        display: flex;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__anuncio__left__text__title1, .main__anuncio__left__text__title2, .main__anuncio__left__text__title3{
+        margin: 0px;
+        font-size: 2vh;
+        font-size: 4vw;
+    }
+
+    .main__anuncio__left__text__p1, .main__anuncio__left__text__p2, .main__anuncio__left__text__p3{
+        font-size: 1.7vh;
+        font-size: 3vw;
+        margin: 0px;
+        color: dimgray;
+        width: 45vw;
+    }
+
+    .main__anuncio__right{
+        display: none;
+        align-items: center;
+
+    }
+
+    .main__anuncio__right__image{
+        height: 60vh;
+        width: 30vw;
+        margin-left: 7vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 99vw;
+    }
+
+    .main__services__text{
+        font-family: Poppins;
+        width: 80vw;
+        margin-left: 0vw;
+    }
+
+    .main__services__text__title{
+        font-size: 2.5vh;
+        font-size: 6vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        margin: 0vh 0vh 1vh 1vw;
+        display: flex;
+    }
+
+    .main__services__text__p{
+        font-size: 1.7vh;
+        font-size: 3vw;
+        font-family: Poppins;
+        margin: 0vh 0vh 2vh 1vw;
+        width: 80vw;
+    }
+
+    .main__services__division{
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw ;
+        grid-row: 20vh 20vh;
+        grid-gap: 1vh;
+        margin-top: 2vh;
+        
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end, .main__services__division__more{
+        height: 20vh;
+        width: 30vw;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+        border-radius: 1vh;
+    }
+
+    .main__services__division__mobile:hover, .main__services__division__photoshop:hover, .main__services__division__copywriting:hover, .main__services__division__brand:hover,
+    .main__services__division__end__to__end:hover{
+        background-color: rgb(240, 240, 240);
+    }
+
+    .main__services__division__more:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+    .main__services__division__photoshop__img, .main__services__division__copywriting__img, .main__services__division__brand__img{
+        width: 4.3vw;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        margin-bottom: 2.8vh;
+    }
+
+    .main__services__division__mobile__img, .main__services__division__end__to__end__img{
+        width: 4.3vw;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end{
+        display: flex;
+        flex-direction: column;
+        font-family: poppins;
+        
+    }
+
+    .main__services__division__mobile__title, .main__services__division__photoshop__title, .main__services__division__copywriting__title, .main__services__division__brand__title,
+    .main__services__division__end__to__end__title{
+        font-size: 3vh;
+        font-size: 2.2vw;
+        height: 2vh;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__p, .main__services__division__photoshop__p, .main__services__division__copywriting__p, .main__services__division__brand__p,
+    .main__services__division__end__to__end__p{
+        font-size: 2vh;
+        font-size: 2.5vw;
+        width: 27vw;
+        margin-left: 2vw;
+        
+    }
+
+    .main__services__division__mobile__button, .main__services__division__photoshop__button, .main__services__division__copywriting__button, .main__services__division__brand__button,
+    .main__services__division__end__to__end__button{
+        font-size: 4vh;
+        font-size: 3vw;
+        border: none;
+        font-family: Poppins;
+        background: none;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: 2vw;
+    }
+
+
+    .main__services__division__more{
+        background-color: rgb(58, 91, 221);
+        font-family: poppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__services__division__more__text{
+        margin: 0px;
+        font-size: 3vh;
+        font-size: 3vw;
+    }
+
+    .main__services__division__more__seta{
+        font-size: 10vh;
+        font-size: 7vw;
+        font-family: poppinsLight;
+        display: flex;
+        align-items: center;
+        height: 3vh;
+        margin: 0px;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev{
+        display: grid;
+        grid-template-rows: 80vh 20vh;
+        margin-top: 10vh;
+        width: 99vw;
+    }
+
+    .main__prev__top{
+        display: grid;
+        grid-template-columns: 55vw 43vw;
+        grid-template-rows: 30vh 40vh;
+    }
+
+    .main__prev__top__top__left{
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        grid-template-rows: 10vh 10vh;
+        grid-gap: 3vh;
+        margin-left: 2vw;
+        margin-top: 3vh;
+    }
+
+    @font-face {
+        font-family: PoppinsLight;
+        src: url(/assets/fontes/Poppins-ExtraLight.ttf);
+    }
+
+    .main__prev__top__top__left__fumiture, .main__prev__top__top__left__int__design, .main__prev__top__top__left__product{
+        background-color: rgb(58, 91, 221);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__left__plush{
+        background: none;
+
+    }
+
+    .main__prev__top__top__left__plus{
+        background-color: rgb(199, 200, 202);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__top__left__fumiture__text, .main__prev__top__top__left__int__design__text, .main__prev__top__top__left__product__text{
+        margin: 0vh;
+        margin-top: 2vh;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__left__fumiture__plus, .main__prev__top__top__left__int__design__plus, .main__prev__top__top__left__product__plus{
+        margin: 0vh;
+        font-size: 6vh;
+        font-size: 4vw;
+        font-family: PoppinsLight;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__right{
+        display: grid;
+        grid-template-rows: 3vh 6vh 3vh;
+        grid-gap: 1vh;
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
+
+    .main__prev__top__top__right__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 3vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__top__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+        font-size: 3vw;
+    }
+
+    .main__prev__top__top__right__text{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 5vh;
+        font-size: 3vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__top__right__btn__bottom__xdesign, .main__prev__top__top__right__btn__bottom__ndesign, .main__prev__top__top__right__btn__bottom__xx{
+        border: none;
+        color: rgb(101, 14, 182);
+        font-family: poppins;
+        font-size: 3vw;
+    }
+
+    .main__prev__top__top__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 3vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__top__bottom__left{
+        margin-left: 2vw;
+    }
+
+    .main__prev__top__bottom__right{
+        margin-left: 1vw;
+    }
+
+    .main__prev__top__bottom__left__img, .main__prev__top__bottom__right__img{
+        height: 20vh;
+        width: 35vw;
+    }
+
+    .main__prev__top__bottom__left__info, .main__prev__top__bottom__right__info{
+        display: grid;
+        grid-template-rows: 3vh 6vh 3vh;
+        grid-gap: 1vh;
+        margin-left: 2vw;
+    }
+
+    .main__prev__top__bottom__left__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 3vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__bottom__right__btn__top__next{
+        background-color: rgb(217, 78, 78);
+        border: none;
+        border-radius: 5vh;
+        height: 3vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__bottom__left__btn__top__date, .main__prev__bottom__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+        font-size: 3vw;
+    }
+
+    .main__prev__top__bottom__left__text, .main__prev__top__bottom__right__text{
+        height: 6vh;
+        font-family: PoppinsLight;
+        font-size: 2.5vh;
+        font-size: 3vw;
+        width: 35vw;
+        display: flex;
+    }
+
+    .main__prev__top__bottom__left__user, .main__prev__top__bottom__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__left__user__img, .main__prev__top__top__right__user__img{
+        height: 3vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+
+    .main__banner{
+        height: 20vh;
+        display: grid;
+        background: linear-gradient(rgb(233,233,233), rgb(228,228,228) );
+        grid-template-columns: 50vw 50vw;
+        width: 99vw;
+    }
+
+    .main__banner__img{
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .main__banner__text__title{
+        font-family: Poppins;
+        font-size: 7vh;
+        font-size: 4vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        margin-left: 1vw;
+        width: 37vw;
+    }
+
+    .main__banner__text__p{
+        font-family: Poppins;
+        font-size: 3vh;
+        font-size: 2.4vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        width: 37vw;
+        margin-right: 5vw;
+        margin-left: 1vw;
+    }
+
+    .main__banner__text__btn{
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-radius: 0.5vh;
+        font-size: 1.8vh;
+        font-size: 2.5vw;
+        border: none;
+        height: 4vh;
+        width: 20vw;
+        margin-left: 18vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__banner__text__btn:hover{
+        background-color: rgb(13, 48, 185);
+    }
+    /*---------------------------------------------------------------------------*/
+
+    .footer{
+        display: grid;
+        grid-template-columns: 28vw 20vw 20vw 20vw;
+        height: 30vh;
+        width: 98vw;
+    }
+
+    .footer__column1{
+        display: flex;
+        justify-content: center;
+        margin-left: 5vw;
+        flex-direction: column;
+    }
+
+    .footer__column1__img{
+        height: 4vh;
+        width: 25vw;
+    }
+
+    .footer__column1__text{
+        width: 30vw;
+        font-size: 1.7vh;
+        font-size: 3vw;
+        font-family: Poppins;
+    }
+
+    .footer__column1__redes{
+        display: flex;
+        width: 30vw;
+        justify-content: space-between;
+    }
+
+    .footer__column1__redes__img{
+        margin-top: 5vh;
+        height: 2vh;
+    }
+
+    .footer__column2, .footer__column3, .footer__column4{
+        display: flex;
+        align-items: center;
+        font-size: 2vh;
+        font-size: 1.8vw;
+    }
+
+    .footer__column2__list, .footer__column3__list, .footer__column4__list{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: Poppins;
+        color: rgb(15, 15, 87);
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    
+
+    .header{
+        height: 7vh;
+        background-color:  rgb(242, 243, 243);
+        display: flex;
+        margin: 0;
+        width: 99vw;
+        
+    }
+
+    .header__logo{
+        height: 5vh;
+        padding: 1vh;
+        padding-left: 5vw;
+    }
+
+    .header__navigation{
+        color: rgb(0, 0, 0);
+        display: none;
+        justify-content: space-around;
+        padding-left: 25vw;
+        width: 50vw;  
+    }
+
+    .header__navigation__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 25vw;
+        font-family:Poppins;
+        font: bold;
+    }
+
+    .header__user{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 99vw;
+        font-family:Poppins;
+        align-items: center;
+        font-size: 3vw;
+        
+    }
+
+    .header__user__list{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 45vw;
+        font-family:Poppins;
+        align-items: center;
+    }
+
+
+    .header__user__list__singup{
+        display: flex;
+        align-items: center;
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        padding: 5%;
+        margin: 3vh;
+        border-radius: 1vh;
+        height: 0.5vh;
+    }
+    .header__navigation__list__home, .header__navigation__list__portifolio,
+    .header__navigation__list__how, .header__navigation__list__team,
+    .header__user__list__login, .header__user__list__singup{
+        font-size: 1vh;
+        font-size: 4vw;
+        transition: all 0.3s ease;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main{
+        display: grid;
+        grid-template-rows: 85vh 10vh 200vh;
+        background-color: rgb(242, 243, 243);
+        width: 99vw;
+    }
+
+    .main__home{
+    display: flex;
+    width: 99vw;
+    margin-top: 15vh;
+    }
+
+    .main__home__image{
+        height: 82vh;
+        width: 48vw;
+        display: none;
+    }
+
+    .main__home__text{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @font-face{
+        font-family: Poppins;
+        src: url('../assets/fontes/Poppins-Light.ttf');
+    }
+
+    .main__home__title{
+        font-size: 6vh;
+        font-size: 10vw;
+        padding: 5% 0% 0% 11.5vw;
+        margin-bottom: 2vh;
+        width: 80vw;
+        font-family:Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__sub__title{
+        font-size: 2vh;
+        padding-left: 11.5vw;
+        margin: 0;
+        width: 80vw;
+        font-family: Poppins;
+        color: rgb(38, 4, 70);
+    }
+
+    .main__home__input{
+        height: 7vh;
+        width: 70vw;
+        margin: 5% 0% 0% 11.5vw;
+        background-color:  rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .main__home__input__btn{
+        height: 70%;
+        width: 20vw;
+        border-radius: 0.5vh;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(81, 81, 255);
+        margin-right: 0.5vw;
+        font-family:Poppins;
+        font-size: 1.4vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__home__input__email{
+        height: 70%;
+        width: 45vw;
+        border: 0px;
+        outline: 0;
+        padding-left: 2vh;
+        font-size: 1.5vh;
+        font-size: 3.5vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__partners{
+        display: grid;
+        grid-template-columns:30vw 30vw 30vw;
+        grid-template-rows: 5vh 5vh;
+        width: 90vw;
+        margin-left: 10vw;
+    }
+
+    .main__partners__image{
+        height: 40%;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .middle{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        width: 98vw;
+    }
+
+    .main__anuncio{
+        display: grid;
+        grid-template-rows: 100vh 100vh;
+        background-color:  rgb(242, 243, 243);
+        width: 98vw;
+    }
+
+    .main__anuncio__left{
+        display: grid;
+        grid-template-rows: 16vh 13vh 13vh 13vh;
+        margin-top: 19vh;
+    }
+
+    .main__anuncio__left__title{
+        font-size: 3vh;
+        font-size: 8vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        padding-left: 20vw;
+        height: 13vh;
+        width: 80vw;
+        margin-top: 1vh;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        padding-left: 25vw;
+        width: 70vw;
+        margin-top: 5vh;
+    }
+
+    .main__anuncio__left__img1, .main__anuncio__left__img3{
+        height: 3vh;
+        margin-right: 3vw;
+    }
+
+    .main__anuncio__left__img2{
+        height: 3vh;
+        margin-right: 2vw;
+    }
+
+    .main__anuncio__left__1, .main__anuncio__left__2, .main__anuncio__left__3{
+        display: flex;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__anuncio__left__text__title1, .main__anuncio__left__text__title2, .main__anuncio__left__text__title3{
+        margin: 0px;
+        font-size: 2vh;
+        font-size: 4vw;
+    }
+
+    .main__anuncio__left__text__p1, .main__anuncio__left__text__p2, .main__anuncio__left__text__p3{
+        font-size: 1.7vh;
+        font-size: 3vw;
+        margin: 0px;
+        color: dimgray;
+        width: 45vw;
+    }
+
+    .main__anuncio__right{
+        display: none;
+        align-items: center;
+
+    }
+
+    .main__anuncio__right__image{
+        height: 60vh;
+        width: 30vw;
+        margin-left: 7vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 99vw;
+    }
+
+    .main__services__text{
+        font-family: Poppins;
+        width: 80vw;
+        margin-left: 0vw;
+    }
+
+    .main__services__text__title{
+        font-size: 2.5vh;
+        font-size: 6vw;
+        font-family: Poppins;
+        color: rgb(76, 77, 78);
+        margin: 0vh 0vh 1vh 1vw;
+        display: flex;
+    }
+
+    .main__services__text__p{
+        font-size: 1.7vh;
+        font-size: 3vw;
+        font-family: Poppins;
+        margin: 0vh 0vh 2vh 1vw;
+        width: 80vw;
+    }
+
+    .main__services__division{
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw ;
+        grid-row: 20vh 20vh;
+        grid-gap: 1vh;
+        margin-top: 2vh;
+        
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end, .main__services__division__more{
+        height: 20vh;
+        width: 30vw;
+        background-color: rgb(255, 255, 255);
+        transition: all 0.3s ease;
+        border-radius: 1vh;
+    }
+
+    .main__services__division__mobile:hover, .main__services__division__photoshop:hover, .main__services__division__copywriting:hover, .main__services__division__brand:hover,
+    .main__services__division__end__to__end:hover{
+        background-color: rgb(240, 240, 240);
+    }
+
+    .main__services__division__more:hover{
+        background-color: rgb(13, 48, 185);
+    }
+
+    .main__services__division__photoshop__img, .main__services__division__copywriting__img, .main__services__division__brand__img{
+        width: 4.3vw;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        margin-bottom: 2.8vh;
+    }
+
+    .main__services__division__mobile__img, .main__services__division__end__to__end__img{
+        width: 4.3vw;
+        margin-left: 2vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh
+    }
+
+    .main__services__division__mobile, .main__services__division__photoshop, .main__services__division__copywriting, .main__services__division__brand,
+    .main__services__division__end__to__end{
+        display: flex;
+        flex-direction: column;
+        font-family: poppins;
+        
+    }
+
+    .main__services__division__mobile__title, .main__services__division__photoshop__title, .main__services__division__copywriting__title, .main__services__division__brand__title,
+    .main__services__division__end__to__end__title{
+        font-size: 3vh;
+        font-size: 2.2vw;
+        height: 2vh;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        margin-left: 2vw;
+    }
+
+    .main__services__division__mobile__p, .main__services__division__photoshop__p, .main__services__division__copywriting__p, .main__services__division__brand__p,
+    .main__services__division__end__to__end__p{
+        font-size: 2vh;
+        font-size: 2.5vw;
+        width: 27vw;
+        margin-left: 2vw;
+        
+    }
+
+    .main__services__division__mobile__button, .main__services__division__photoshop__button, .main__services__division__copywriting__button, .main__services__division__brand__button,
+    .main__services__division__end__to__end__button{
+        font-size: 4vh;
+        font-size: 3vw;
+        border: none;
+        font-family: Poppins;
+        background: none;
+        display: flex;
+        align-items: flex-start;
+        padding: 0;
+        margin-left: 2vw;
+    }
+
+
+    .main__services__division__more{
+        background-color: rgb(58, 91, 221);
+        font-family: poppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main__services__division__more__text{
+        margin: 0px;
+        font-size: 3vh;
+        font-size: 3vw;
+    }
+
+    .main__services__division__more__seta{
+        font-size: 10vh;
+        font-size: 7vw;
+        font-family: poppinsLight;
+        display: flex;
+        align-items: center;
+        height: 3vh;
+        margin: 0px;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev{
+        display: grid;
+        grid-template-rows: 80vh 20vh;
+        margin-top: 10vh;
+        width: 99vw;
+    }
+
+    .main__prev__top{
+        display: grid;
+        grid-template-columns: 55vw 43vw;
+        grid-template-rows: 30vh 40vh;
+    }
+
+    .main__prev__top__top__left{
+        display: grid;
+        grid-template-columns: 20vw 20vw;
+        grid-template-rows: 10vh 10vh;
+        grid-gap: 3vh;
+        margin-left: 2vw;
+        margin-top: 3vh;
+    }
+
+    @font-face {
+        font-family: PoppinsLight;
+        src: url(/assets/fontes/Poppins-ExtraLight.ttf);
+    }
+
+    .main__prev__top__top__left__fumiture, .main__prev__top__top__left__int__design, .main__prev__top__top__left__product{
+        background-color: rgb(58, 91, 221);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8vh;
+        font-size: 2vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__prev__top__top__left__plush{
+        background: none;
+
+    }
+
+    .main__prev__top__top__left__plus{
+        background-color: rgb(199, 200, 202);
+        border-radius: 1vh;
+        font-family: PoppinsLight;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__top__left__fumiture__text, .main__prev__top__top__left__int__design__text, .main__prev__top__top__left__product__text{
+        margin: 0vh;
+        margin-top: 2vh;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__left__fumiture__plus, .main__prev__top__top__left__int__design__plus, .main__prev__top__top__left__product__plus{
+        margin: 0vh;
+        font-size: 6vh;
+        font-size: 4vw;
+        font-family: PoppinsLight;
+        width: 10vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main__prev__top__top__right{
+        display: grid;
+        grid-template-rows: 3vh 6vh 3vh;
+        grid-gap: 1vh;
+        margin-top: 5vh;
+        margin-left: 1vw;
+    }
+
+    .main__prev__top__top__right__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 3vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__top__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+        font-size: 3vw;
+    }
+
+    .main__prev__top__top__right__text{
+        margin: 0vh;
+        font-family: PoppinsLight;
+        font-size: 5vh;
+        font-size: 3vw;
+        width: 37vw;
+
+    }
+
+    .main__prev__top__top__right__btn__bottom__xdesign, .main__prev__top__top__right__btn__bottom__ndesign, .main__prev__top__top__right__btn__bottom__xx{
+        border: none;
+        color: rgb(101, 14, 182);
+        font-family: poppins;
+        font-size: 3vw;
+    }
+
+    .main__prev__top__top__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 3vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__top__bottom__left{
+        margin-left: 2vw;
+    }
+
+    .main__prev__top__bottom__right{
+        margin-left: 1vw;
+    }
+
+    .main__prev__top__bottom__left__img, .main__prev__top__bottom__right__img{
+        height: 20vh;
+        width: 35vw;
+    }
+
+    .main__prev__top__bottom__left__info, .main__prev__top__bottom__right__info{
+        display: grid;
+        grid-template-rows: 3vh 6vh 3vh;
+        grid-gap: 1vh;
+        margin-left: 2vw;
+    }
+
+    .main__prev__top__bottom__left__btn__top__next{
+        background-color: rgb(58, 91, 221);
+        border: none;
+        border-radius: 5vh;
+        height: 3vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+
+    .main__prev__top__bottom__right__btn__top__next{
+        background-color: rgb(217, 78, 78);
+        border: none;
+        border-radius: 5vh;
+        height: 3vh;
+        width: 10vw;
+        color: white;
+        font-family: PoppinsLight;
+        font-size: 1.8vh;
+        font-size: 3vw;
+        transition: all 0.3s ease;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+    .main__prev__bottom__left__btn__top__date, .main__prev__bottom__right__btn__top__date{
+        border: none;
+        font-family: PoppinsLight;
+        font-size: 3vw;
+    }
+
+    .main__prev__top__bottom__left__text, .main__prev__top__bottom__right__text{
+        height: 6vh;
+        font-family: PoppinsLight;
+        font-size: 2.5vh;
+        font-size: 3vw;
+        width: 35vw;
+        display: flex;
+    }
+
+    .main__prev__top__bottom__left__user, .main__prev__top__bottom__right__user{
+        display: flex;
+        font-size: 1.5vh;
+        font-size: 0.7vw;
+        font-family: Poppins;
+        align-items: center;
+    }
+
+    .main__prev__top__top__left__user__img, .main__prev__top__top__right__user__img{
+        height: 3vh;
+        margin-right: 1vw;
+    }
+
+    /*---------------------------------------------------------------------------*/
+
+
+    .main__banner{
+        height: 20vh;
+        display: grid;
+        background: linear-gradient(rgb(233,233,233), rgb(228,228,228) );
+        grid-template-columns: 50vw 50vw;
+        width: 99vw;
+    }
+
+    .main__banner__img{
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .main__banner__text__title{
+        font-family: Poppins;
+        font-size: 7vh;
+        font-size: 4vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        margin-left: 1vw;
+        width: 37vw;
+    }
+
+    .main__banner__text__p{
+        font-family: Poppins;
+        font-size: 3vh;
+        font-size: 2.4vw;
+        color: rgb(64, 15, 111);
+        text-align: end;
+        width: 37vw;
+        margin-right: 5vw;
+        margin-left: 1vw;
+    }
+
+    .main__banner__text__btn{
+        font-family:Poppins;
+        background-color: rgb(81, 81, 255);
+        color: rgb(255, 255, 255);
+        border-radius: 0.5vh;
+        font-size: 1.8vh;
+        font-size: 2.5vw;
+        border: none;
+        height: 4vh;
+        width: 20vw;
+        margin-left: 18vw;
+        transition: all 0.3s ease;
+    }
+
+    .main__banner__text__btn:hover{
+        background-color: rgb(13, 48, 185);
+    }
+    /*---------------------------------------------------------------------------*/
+
+    .footer{
+        display: grid;
+        grid-template-columns: 28vw 20vw 20vw 20vw;
+        height: 30vh;
+        width: 98vw;
+    }
+
+    .footer__column1{
+        display: flex;
+        justify-content: center;
+        margin-left: 5vw;
+        flex-direction: column;
+    }
+
+    .footer__column1__img{
+        height: 4vh;
+        width: 25vw;
+    }
+
+    .footer__column1__text{
+        width: 30vw;
+        font-size: 1.7vh;
+        font-size: 3vw;
+        font-family: Poppins;
+    }
+
+    .footer__column1__redes{
+        display: flex;
+        width: 30vw;
+        justify-content: space-between;
+    }
+
+    .footer__column1__redes__img{
+        margin-top: 5vh;
+        height: 2vh;
+    }
+
+    .footer__column2, .footer__column3, .footer__column4{
+        display: flex;
+        align-items: center;
+        font-size: 2vh;
+        font-size: 1.8vw;
+    }
+
+    .footer__column2__list, .footer__column3__list, .footer__column4__list{
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-family: Poppins;
+        color: rgb(15, 15, 87);
+    }
+
+}
+
